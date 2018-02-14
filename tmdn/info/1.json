@@ -1,0 +1,852 @@
+{
+    "criterias": null,
+    "errorMessage": "",
+    "facetFields": {
+        "facetQueries": {
+            "RegistrationDate": {
+                "ocurrences": {
+                    "10year": "30/12/2001 to 30/12/2011:0",
+                    "5year": "31/12/2011 to 31/12/2016:0",
+                    "month": "02/01/2018 to 02/02/2018:0",
+                    "more": "until 29/12/2001:0",
+                    "today": "11/02/2018:0",
+                    "week": "03/02/2018 to 10/02/2018:0",
+                    "year": "01/01/2017 to 01/01/2018:0"
+                }
+            },
+            "ad": {
+                "ocurrences": {
+                    "10year": "30/12/2001 to 30/12/2011:0",
+                    "5year": "31/12/2011 to 31/12/2016:0",
+                    "month": "02/01/2018 to 02/02/2018:0",
+                    "more": "until 29/12/2001:0",
+                    "today": "11/02/2018:0",
+                    "week": "03/02/2018 to 10/02/2018:0",
+                    "year": "01/01/2017 to 01/01/2018:0"
+                }
+            }
+        },
+        "facets": {
+            "anm_auto": {
+                "ocurrences": {
+                    "Aldi Stores Limited": 13,
+                    "AstraZeneca AB": 21,
+                    "CNet Training Limited": 14,
+                    "CRYSTAL CLEAR SOLUTIONS SL LTD": 13,
+                    "DESYLLAS GAMES INTERNATIONAL LTD": 18,
+                    "Derby Brewing Company Limited": 12,
+                    "Diversified Business Communications UK Ltd": 11,
+                    "Glaxo Group Limited": 24,
+                    "Independent Vetcare Limited": 15,
+                    "Intesa Sanpaolo S.p.A.": 18,
+                    "Islestarr Holdings Limited": 15,
+                    "Kobayashi Pharmaceutical Co., Ltd.": 13,
+                    "Limited": 33,
+                    "London Grid for Learning Trust": 47,
+                    "McCain Foods (GB) Limited": 44,
+                    "Merch It Up LTD": 13,
+                    "Net World Sports Ltd": 12,
+                    "TOYOTA JIDOSHA KABUSHIKI KAISHA (also trading as TOYOTA MOTOR CORPORATION)": 19,
+                    "The Royal British Legion": 12,
+                    "shaws cardiff ltd": 16
+                }
+            },
+            "nc": {
+                "ocurrences": {
+                    "0": 0,
+                    "1": 184,
+                    "10": 264,
+                    "11": 395,
+                    "12": 327,
+                    "13": 20,
+                    "14": 391,
+                    "15": 41,
+                    "16": 1042,
+                    "17": 87,
+                    "18": 569,
+                    "19": 180,
+                    "2": 83,
+                    "20": 403,
+                    "21": 547,
+                    "22": 82,
+                    "23": 41,
+                    "24": 287,
+                    "25": 1772,
+                    "26": 123,
+                    "27": 103,
+                    "28": 655,
+                    "29": 477,
+                    "3": 755,
+                    "30": 631,
+                    "31": 191,
+                    "32": 418,
+                    "33": 426,
+                    "34": 179,
+                    "35": 2424,
+                    "36": 964,
+                    "37": 541,
+                    "38": 521,
+                    "39": 417,
+                    "4": 145,
+                    "40": 212,
+                    "41": 2295,
+                    "42": 1451,
+                    "43": 827,
+                    "44": 701,
+                    "45": 476,
+                    "5": 624,
+                    "6": 222,
+                    "7": 251,
+                    "8": 196,
+                    "9": 2294
+                }
+            },
+            "oc": {
+                "ocurrences": {
+                    "AL": 0,
+                    "AP": 0,
+                    "AR": 0,
+                    "AT": 0,
+                    "BA": 0,
+                    "BG": 0,
+                    "BR": 0,
+                    "BX": 0,
+                    "CA": 0,
+                    "CH": 0,
+                    "CO": 0,
+                    "CY": 0,
+                    "CZ": 0,
+                    "DE": 0,
+                    "DK": 0,
+                    "EE": 0,
+                    "EM": 0,
+                    "ES": 0,
+                    "FI": 0,
+                    "FR": 0,
+                    "GB": 12476,
+                    "GE": 0,
+                    "GR": 0,
+                    "HR": 0,
+                    "HU": 0,
+                    "IE": 0,
+                    "IN": 0,
+                    "IS": 0,
+                    "IT": 0,
+                    "JP": 0,
+                    "KH": 0,
+                    "KR": 0,
+                    "LT": 0,
+                    "LV": 0,
+                    "MA": 0,
+                    "MD": 0,
+                    "MK": 0,
+                    "MT": 0,
+                    "MX": 0,
+                    "MY": 0,
+                    "NO": 0,
+                    "PE": 0,
+                    "PH": 0,
+                    "PL": 0,
+                    "PT": 0,
+                    "RO": 0,
+                    "RS": 0,
+                    "RU": 0,
+                    "SE": 0,
+                    "SG": 0,
+                    "SI": 0,
+                    "SK": 0,
+                    "SM": 0,
+                    "TN": 0,
+                    "TR": 0,
+                    "US": 0,
+                    "WO": 0
+                }
+            },
+            "sc_auto": {
+                "ocurrences": {
+                    "Ended": 0,
+                    "Expired": 0,
+                    "Filed": 12476,
+                    "Registered": 0
+                }
+            },
+            "tp": {
+                "ocurrences": {
+                    "AD": 0,
+                    "AE": 0,
+                    "AF": 0,
+                    "AG": 0,
+                    "AI": 0,
+                    "AL": 0,
+                    "AM": 0,
+                    "AN": 0,
+                    "AO": 0,
+                    "AP": 0,
+                    "AR": 0,
+                    "AT": 0,
+                    "AU": 0,
+                    "AW": 0,
+                    "AZ": 0,
+                    "BA": 0,
+                    "BB": 0,
+                    "BD": 0,
+                    "BE": 0,
+                    "BF": 0,
+                    "BG": 0,
+                    "BH": 0,
+                    "BI": 0,
+                    "BJ": 0,
+                    "BM": 0,
+                    "BN": 0,
+                    "BO": 0,
+                    "BQ": 0,
+                    "BR": 0,
+                    "BS": 0,
+                    "BT": 0,
+                    "BW": 0,
+                    "BX": 0,
+                    "BY": 0,
+                    "BZ": 0,
+                    "CA": 0,
+                    "CD": 0,
+                    "CF": 0,
+                    "CG": 0,
+                    "CH": 0,
+                    "CI": 0,
+                    "CL": 0,
+                    "CM": 0,
+                    "CN": 0,
+                    "CO": 0,
+                    "CR": 0,
+                    "CS": 0,
+                    "CU": 0,
+                    "CV": 0,
+                    "CW": 0,
+                    "CY": 0,
+                    "CZ": 0,
+                    "DD": 0,
+                    "DE": 0,
+                    "DJ": 0,
+                    "DK": 0,
+                    "DM": 0,
+                    "DO": 0,
+                    "DT": 0,
+                    "DZ": 0,
+                    "EC": 0,
+                    "EE": 0,
+                    "EG": 0,
+                    "EM": 0,
+                    "EP": 0,
+                    "ES": 0,
+                    "ET": 0,
+                    "FI": 0,
+                    "FJ": 0,
+                    "FO": 0,
+                    "FR": 0,
+                    "GA": 0,
+                    "GB": 12476,
+                    "GD": 0,
+                    "GE": 0,
+                    "GG": 0,
+                    "GH": 0,
+                    "GI": 0,
+                    "GL": 0,
+                    "GM": 0,
+                    "GN": 0,
+                    "GQ": 0,
+                    "GR": 0,
+                    "GT": 0,
+                    "GW": 0,
+                    "GY": 0,
+                    "HK": 0,
+                    "HN": 0,
+                    "HR": 0,
+                    "HT": 0,
+                    "HU": 0,
+                    "ID": 0,
+                    "IE": 0,
+                    "IL": 0,
+                    "IM": 0,
+                    "IN": 0,
+                    "IQ": 0,
+                    "IR": 0,
+                    "IS": 0,
+                    "IT": 0
+                }
+            },
+            "ty": {
+                "ocurrences": {
+                    "\n            Undefined\n          ": 0,
+                    "3-D": 10,
+                    "3D shape": 0,
+                    "Colour": 1,
+                    "Combination of colours": 0,
+                    "Combined": 0,
+                    "Figurative": 5148,
+                    "General mark": 0,
+                    "Hologram": 0,
+                    "Kennfaden": 0,
+                    "Motion": 0,
+                    "Multimedia": 0,
+                    "Olfactory": 0,
+                    "Other": 0,
+                    "Packing": 0,
+                    "Pattern": 0,
+                    "Position": 0,
+                    "Sound": 1,
+                    "Stylized characters": 0,
+                    "Undefined": 0,
+                    "Word": 7316
+                }
+            },
+            "vctwolevel": {
+                "ocurrences": {
+                    "01.01": 59,
+                    "01.03": 53,
+                    "01.05": 37,
+                    "01.15": 132,
+                    "02.01": 87,
+                    "02.03": 38,
+                    "02.09": 157,
+                    "03.01": 101,
+                    "03.04": 29,
+                    "03.05": 24,
+                    "03.07": 98,
+                    "03.13": 31,
+                    "04.05": 53,
+                    "05.01": 47,
+                    "05.03": 85,
+                    "05.05": 60,
+                    "05.07": 41,
+                    "07.01": 58,
+                    "09.07": 25,
+                    "18.01": 37,
+                    "24.01": 55,
+                    "24.09": 62,
+                    "24.15": 56,
+                    "24.17": 47,
+                    "25.01": 43,
+                    "26.01": 229,
+                    "26.02": 47,
+                    "26.03": 56,
+                    "26.04": 103,
+                    "26.05": 33,
+                    "26.07": 138,
+                    "26.11": 145,
+                    "26.13": 140,
+                    "26.15": 25,
+                    "27.01": 51,
+                    "27.05": 410,
+                    "27.08": 478,
+                    "27.99": 707,
+                    "28.03": 61,
+                    "29.01": 46
+                }
+            }
+        }
+    },
+    "filters": [
+        {
+            "criteria": "oc",
+            "value": "GB"
+        },
+        {
+            "criteria": "AND",
+            "value": null
+        },
+        {
+            "criteria": "ad",
+            "value": "2017-12-01..2018-02-07"
+        }
+    ],
+    "fullQuery": "oc:GB AND ad:2017-12-01..2018-02-07",
+    "fullSearch": [
+        {
+            "criteria": "oc",
+            "value": "GB"
+        },
+        {
+            "criteria": "AND",
+            "value": null
+        },
+        {
+            "criteria": "ad",
+            "value": "2017-12-01..2018-02-07"
+        }
+    ],
+    "highlightedValues": null,
+    "maxResultSecondLimit": 0,
+    "maxResultsOffice": 0,
+    "page": "1",
+    "providerStatus": {},
+    "providerTotalNumberResults": {},
+    "records": "12476",
+    "rows": [
+        {
+            "ApplicantName": [
+                "Waqaus Ali"
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkVerbalElementText": "Tarbiyyah Club",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003267456",
+            "SeniorityIndicator": "false",
+            "ad": 1512388800000,
+            "aid": [
+                "480141"
+            ],
+            "an": "UK00003267456",
+            "anm": [
+                "Waqaus Ali"
+            ],
+            "anm_auto": [
+                "Waqaus Ali"
+            ],
+            "auri": [
+                "480141"
+            ],
+            "globalsearch": [
+                "UK00003267456",
+                "Tarbiyyah Club"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                16,
+                35,
+                41
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1512697755233,
+            "tm": "Tarbiyyah Club",
+            "tms": 2,
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003267456",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Word"
+        },
+        {
+            "ApplicantName": [
+                "American Golf Discount Centre Limited"
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkImageURI": "http://www.ipo.gov.uk/trademark/image/GB500000003275085",
+            "MarkVerbalElementText": "Fazer",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003275085",
+            "SeniorityIndicator": "false",
+            "ad": 1512475200000,
+            "aid": [
+                "547003"
+            ],
+            "an": "UK00003275085",
+            "anm": [
+                "American Golf Discount Centre Limited"
+            ],
+            "anm_auto": [
+                "American Golf Discount Centre Limited"
+            ],
+            "auri": [
+                "547003"
+            ],
+            "globalsearch": [
+                "UK00003275085",
+                "Fazer"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                9,
+                18,
+                28
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1512697757527,
+            "tm": "Fazer",
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003275085",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Figurative",
+            "vc": [
+                "27.05.01"
+            ],
+            "vctwolevel": [
+                "27.05"
+            ]
+        },
+        {
+            "ApplicantName": [
+                "Tropic Skin Care Limited"
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkVerbalElementText": "INSTANT GLOW",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003276854",
+            "SeniorityIndicator": "false",
+            "ad": 1513166400000,
+            "aid": [
+                "519867"
+            ],
+            "an": "UK00003276854",
+            "anm": [
+                "Tropic Skin Care Limited"
+            ],
+            "anm_auto": [
+                "Tropic Skin Care Limited"
+            ],
+            "auri": [
+                "519867"
+            ],
+            "globalsearch": [
+                "UK00003276854",
+                "INSTANT GLOW"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                3
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1513905611371,
+            "tm": "INSTANT GLOW",
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003276854",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Word"
+        },
+        {
+            "ApplicantName": [
+                "GW Development (UK) Ltd"
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkVerbalElementText": "The Noodle Game",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003275252",
+            "SeniorityIndicator": "false",
+            "ad": 1512475200000,
+            "aid": [
+                "548837"
+            ],
+            "an": "UK00003275252",
+            "anm": [
+                "GW Development (UK) Ltd"
+            ],
+            "anm_auto": [
+                "GW Development (UK) Ltd"
+            ],
+            "auri": [
+                "548837"
+            ],
+            "globalsearch": [
+                "UK00003275252",
+                "The Noodle Game"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                28
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1513905611371,
+            "tm": "The Noodle Game",
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003275252",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Word"
+        },
+        {
+            "ApplicantName": [
+                "VILLAGE CENTER"
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkVerbalElementText": "MAKE CAMPING GREAT AGAIN",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003275776",
+            "SeniorityIndicator": "false",
+            "ad": 1512648000000,
+            "aid": [
+                "525861"
+            ],
+            "an": "UK00003275776",
+            "anm": [
+                "VILLAGE CENTER"
+            ],
+            "anm_auto": [
+                "VILLAGE CENTER"
+            ],
+            "auri": [
+                "525861"
+            ],
+            "globalsearch": [
+                "UK00003275776",
+                "MAKE CAMPING GREAT AGAIN"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                12,
+                35,
+                36,
+                37,
+                38,
+                39,
+                41,
+                43
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1513905611371,
+            "tm": "MAKE CAMPING GREAT AGAIN",
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003275776",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Word"
+        },
+        {
+            "ApplicantName": [
+                "Jamie Macaffer"
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkImageURI": "http://www.ipo.gov.uk/trademark/image/GB500000003275527",
+            "MarkVerbalElementText": "ONE BODHI",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003275527",
+            "SeniorityIndicator": "false",
+            "ad": 1512561600000,
+            "aid": [
+                "549045"
+            ],
+            "an": "UK00003275527",
+            "anm": [
+                "Jamie Macaffer"
+            ],
+            "anm_auto": [
+                "Jamie Macaffer"
+            ],
+            "auri": [
+                "549045"
+            ],
+            "globalsearch": [
+                "UK00003275527",
+                "ONE BODHI"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                25
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1513905611371,
+            "tm": "ONE BODHI",
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003275527",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Figurative",
+            "vc": [
+                "27.99"
+            ],
+            "vctwolevel": [
+                "27.99"
+            ]
+        },
+        {
+            "ApplicantName": [
+                "Kobayashi Pharmaceutical Co., Ltd."
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkImageURI": "http://www.ipo.gov.uk/trademark/image/GB500000003275305",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003275305",
+            "SeniorityIndicator": "false",
+            "ad": 1512475200000,
+            "aid": [
+                "277265"
+            ],
+            "an": "UK00003275305",
+            "anm": [
+                "Kobayashi Pharmaceutical Co., Ltd."
+            ],
+            "anm_auto": [
+                "Kobayashi Pharmaceutical Co., Ltd."
+            ],
+            "auri": [
+                "277265"
+            ],
+            "globalsearch": [
+                "UK00003275305"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                3,
+                5,
+                10,
+                30
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1513905611371,
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003275305",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Figurative",
+            "vc": [
+                "02.01.01"
+            ],
+            "vctwolevel": [
+                "02.01"
+            ]
+        },
+        {
+            "ApplicantName": [
+                "CRYSTAL CLEAR SOLUTIONS SL LTD"
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkImageURI": "http://www.ipo.gov.uk/trademark/image/GB500000003274558",
+            "MarkVerbalElementText": "Psychic Sue",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003274558",
+            "SeniorityIndicator": "false",
+            "ad": 1512129600000,
+            "aid": [
+                "548263"
+            ],
+            "an": "UK00003274558",
+            "anm": [
+                "CRYSTAL CLEAR SOLUTIONS SL LTD"
+            ],
+            "anm_auto": [
+                "CRYSTAL CLEAR SOLUTIONS SL LTD"
+            ],
+            "auri": [
+                "548263"
+            ],
+            "globalsearch": [
+                "UK00003274558",
+                "Psychic Sue"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                16,
+                35,
+                41,
+                44,
+                45
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1513732424628,
+            "tm": "Psychic Sue",
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003274558",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Figurative",
+            "vc": [
+                "02.09.14"
+            ],
+            "vctwolevel": [
+                "02.09"
+            ]
+        },
+        {
+            "ApplicantName": [
+                "Guttermate Ltd"
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkVerbalElementText": "Rainbow Wormery",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003274946",
+            "SeniorityIndicator": "false",
+            "ad": 1512388800000,
+            "aid": [
+                "492876"
+            ],
+            "an": "UK00003274946",
+            "anm": [
+                "Guttermate Ltd"
+            ],
+            "anm_auto": [
+                "Guttermate Ltd"
+            ],
+            "auri": [
+                "492876"
+            ],
+            "globalsearch": [
+                "UK00003274946",
+                "Rainbow Wormery"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                20
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1513732424628,
+            "tm": "Rainbow Wormery",
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003274946",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Word"
+        },
+        {
+            "ApplicantName": [
+                "Rhoda Persad"
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkVerbalElementText": "Wired hairband wrap",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003274789",
+            "SeniorityIndicator": "false",
+            "ad": 1512388800000,
+            "aid": [
+                "548496"
+            ],
+            "an": "UK00003274789",
+            "anm": [
+                "Rhoda Persad"
+            ],
+            "anm_auto": [
+                "Rhoda Persad"
+            ],
+            "auri": [
+                "548496"
+            ],
+            "globalsearch": [
+                "UK00003274789",
+                "Wired hairband wrap"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                25
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1513732424639,
+            "tm": "Wired hairband wrap",
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003274789",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Word"
+        }
+    ],
+    "st13": null,
+    "total": 1248
+}

@@ -1,0 +1,1 @@
+curl 'https://prizm5lb.prizm5api.com/getPrizmDetails2.php' --data 'prizm=68&key=UmuVjw36z8tP64vXTTXPqY3YgFg07cV1'

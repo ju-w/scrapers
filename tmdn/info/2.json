@@ -1,0 +1,53 @@
+        {
+            "ApplicantName": [
+                "Smart Cone Limited"
+            ],
+            "InternationalMarkIndicator": "false",
+            "MarkImageURI": "http://www.ipo.gov.uk/trademark/image/GB500000003275444",
+            "MarkVerbalElementText": "Smart Cone",
+            "OperationCode": "Insert",
+            "ST13": "GB500000003275444",
+            "SeniorityIndicator": "false",
+            "ad": 1512561600000,
+            "aid": [
+                "548985"
+            ],
+            "an": "UK00003275444",
+            "anm": [
+                "Smart Cone Limited"
+            ],
+            "anm_auto": [
+                "Smart Cone Limited"
+            ],
+            "auri": [
+                "548985"
+            ],
+            "globalsearch": [
+                "UK00003275444",
+                "Smart Cone"
+            ],
+            "ipr": "Trade mark",
+            "nc": [
+                9
+            ],
+            "oc": "GB",
+            "sc": "Filed",
+            "sc_auto": "Filed",
+            "timestamp": 1513905619793,
+            "tm": "Smart Cone",
+            "tmuri": "http://soap.ipo.gov.uk/trademark/data/GB500000003275444",
+            "tp": [
+                "GB"
+            ],
+            "ty": "Figurative",
+            "vc": [
+                "26.01",
+                "26.02",
+                "26.11"
+            ],
+            "vctwolevel": [
+                "26.01",
+                "26.02",
+                "26.11"
+            ]
+        },

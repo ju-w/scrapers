@@ -1,0 +1,3185 @@
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+
+
+			<head>
+
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+
+<script type="text/javascript">
+<!--
+window["_csrf_"] = "086de89968848800e17579c6afb65a76015b2ed24fb0528e53022e44e18bcd421ae7bc742c110830d0b0a5f45e9bab7637e1c3f70ee9d6635880bf708b2c6022862a6ec941c7b518e605ae99eb49e59ef2846ae0c161d914ac1090fa156c3346df214248d133ef0ebf46217e801d88133c5b0d3a09bd0836251789f4ab1d9ee88411545c8236644f89ff35786e1836eb";
+//-->
+</script>
+<script type="text/javascript" src="/TSbd/0827db1318ab20002498d2cb7d905bfc6c5b4cdc2373d21e8931a2c3d35108a5da807687246e5f21?type=2"></script>
+<script type="text/javascript" src="resources/js/advancedSearchDTCombos.js"></script>
+		<!-- GLOBALS AND LABELS JAVA 2 JAVASCRIPT BEFORE OUR SCRIPTS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" >
+
+	/*
+		FUNCTIONS
+	*/
+	if (!('indexOf' in Array.prototype)) {
+	    Array.prototype.indexOf= function(find, i ) {
+	        if (i===undefined) i= 0;
+	        if (i<0) i+= this.length;
+	        if (i<0) i= 0;
+	        for (var n= this.length; i<n; i++)
+	            if (i in this && this[i]===find)
+	                return i;
+	        return -1;
+	    };
+	}
+
+	/*
+		COMMON AND GLOBAL VARIABLES
+	*/
+	Tmdsview = new Object();
+
+	var TMV_APP_ID = 1;
+	var DSV_APP_ID = 2;
+	var EMPTY_CACHE_KEY = "empty-cache-key";
+	var applicationId = 1;
+	var officesURL = new Array();
+	var officeNames = new Array();
+	var completeOfficeList = [];
+	var completeOfficeCountryNames = [];
+
+	var activeOfficeList = [];
+	var activeEUOfficeList = [];
+	var activeNONEUOfficeList = [];
+
+	Tmdsview.applicationOffice = new Array();
+
+
+	  officesURL['AL'] = 'http://www.dppm.gov.al/';
+	  officeNames['AL'] = 'General Directorate of Industrial Property';
+	  completeOfficeList.push('AL');
+	  completeOfficeCountryNames.push('Albania');
+
+	  	activeOfficeList.push('AL');
+
+
+
+				Tmdsview.applicationOffice['AL'] = 'AL Albania ( GDIP )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('AL');
+
+
+
+	  officesURL['AP'] = 'http://www.aripo.org';
+	  officeNames['AP'] = 'African Regional Intellectual Property Organization';
+	  completeOfficeList.push('AP');
+	  completeOfficeCountryNames.push('ARIPO');
+
+	  	activeOfficeList.push('AP');
+
+
+
+				Tmdsview.applicationOffice['AP'] = 'AP ARIPO ( ARIPO )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('AP');
+
+
+
+	  officesURL['AR'] = 'http://www.inpi.gob.ar';
+	  officeNames['AR'] = 'Instituto Nacional de la Propiedad Industrial';
+	  completeOfficeList.push('AR');
+	  completeOfficeCountryNames.push('Argentina');
+
+	  	activeOfficeList.push('AR');
+
+
+
+				Tmdsview.applicationOffice['AR'] = 'AR Argentina ( INPI )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('AR');
+
+
+
+	  officesURL['AT'] = 'http://www.patentamt.at/';
+	  officeNames['AT'] = 'Österreichischen Patentamt';
+	  completeOfficeList.push('AT');
+	  completeOfficeCountryNames.push('Austria');
+
+	  	activeOfficeList.push('AT');
+
+
+
+				Tmdsview.applicationOffice['AT'] = 'AT Austria ( OPA )';
+
+
+
+
+
+		  	activeEUOfficeList.push('AT');
+
+
+
+
+	  officesURL['BA'] = 'http://www.ipr.gov.ba/en/';
+	  officeNames['BA'] = 'Institute for Intellectual Property of Bosnia and Herzegovina';
+	  completeOfficeList.push('BA');
+	  completeOfficeCountryNames.push('Bosnia and Herzegovina');
+
+	  	activeOfficeList.push('BA');
+
+
+
+				Tmdsview.applicationOffice['BA'] = 'BA Bosnia and Herzegovina ( IIP-BIH )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('BA');
+
+
+
+	  officesURL['BG'] = 'http://www.bpo.bg/';
+	  officeNames['BG'] = 'Patent Office of the Republic of Bulgaria';
+	  completeOfficeList.push('BG');
+	  completeOfficeCountryNames.push('Bulgaria');
+
+	  	activeOfficeList.push('BG');
+
+
+
+				Tmdsview.applicationOffice['BG'] = 'BG Bulgaria ( BPO )';
+
+
+
+
+
+		  	activeEUOfficeList.push('BG');
+
+
+
+
+	  officesURL['BR'] = 'http://www.inpi.gov.br';
+	  officeNames['BR'] = 'Instituto Nacional da Propriedade Industrial';
+	  completeOfficeList.push('BR');
+	  completeOfficeCountryNames.push('Brazil');
+
+	  	activeOfficeList.push('BR');
+
+
+
+				Tmdsview.applicationOffice['BR'] = 'BR Brazil ( INPI )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('BR');
+
+
+
+	  officesURL['BX'] = 'https://www.boip.int/en';
+	  officeNames['BX'] = 'Benelux Office for Intellectual Property';
+	  completeOfficeList.push('BX');
+	  completeOfficeCountryNames.push('Benelux');
+
+	  	activeOfficeList.push('BX');
+
+
+
+				Tmdsview.applicationOffice['BX'] = 'BX Benelux ( BOIP )';
+
+
+
+
+
+		  	activeEUOfficeList.push('BX');
+
+
+
+
+	  officesURL['CA'] = 'http://www.cipo.ic.gc.ca/eic/site/cipointernet-internetopic.nsf/eng/home';
+	  officeNames['CA'] = 'Canadian Intellectual Property Office';
+	  completeOfficeList.push('CA');
+	  completeOfficeCountryNames.push('Canada');
+
+	  	activeOfficeList.push('CA');
+
+
+
+				Tmdsview.applicationOffice['CA'] = 'CA Canada ( CIPO )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('CA');
+
+
+
+	  officesURL['CH'] = 'https://www.ige.ch/en.html';
+	  officeNames['CH'] = 'Swiss Federal Institute of Intellectual Property';
+	  completeOfficeList.push('CH');
+	  completeOfficeCountryNames.push('Switzerland');
+
+	  	activeOfficeList.push('CH');
+
+
+
+				Tmdsview.applicationOffice['CH'] = 'CH Switzerland ( IGE-IPI )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('CH');
+
+
+
+	  officesURL['CO'] = 'http://www.sic.gov.co';
+	  officeNames['CO'] = 'Superintendencia de Industria y Comercio';
+	  completeOfficeList.push('CO');
+	  completeOfficeCountryNames.push('Colombia');
+
+	  	activeOfficeList.push('CO');
+
+
+
+				Tmdsview.applicationOffice['CO'] = 'CO Colombia ( SIC )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('CO');
+
+
+
+	  officesURL['CY'] = 'http://www.mcit.gov.cy/mcit/drcor/drcor.nsf/index_gr/index_gr?OpenDocument';
+	  officeNames['CY'] = 'Cyprus Trademark Office';
+	  completeOfficeList.push('CY');
+	  completeOfficeCountryNames.push('Cyprus');
+
+	  	activeOfficeList.push('CY');
+
+
+
+				Tmdsview.applicationOffice['CY'] = 'CY Cyprus ( DRCOR )';
+
+
+
+
+
+		  	activeEUOfficeList.push('CY');
+
+
+
+
+	  officesURL['CZ'] = 'http://www.upv.cz';
+	  officeNames['CZ'] = 'Industrial Property Office of the Czech Republic';
+	  completeOfficeList.push('CZ');
+	  completeOfficeCountryNames.push('Czech Republic');
+
+	  	activeOfficeList.push('CZ');
+
+
+
+				Tmdsview.applicationOffice['CZ'] = 'CZ Czech Republic ( IPOCZ )';
+
+
+
+
+
+		  	activeEUOfficeList.push('CZ');
+
+
+
+
+	  officesURL['DE'] = 'http://www.dpma.de';
+	  officeNames['DE'] = 'Deutsches Patent- und Markenamt';
+	  completeOfficeList.push('DE');
+	  completeOfficeCountryNames.push('Germany');
+
+	  	activeOfficeList.push('DE');
+
+
+
+				Tmdsview.applicationOffice['DE'] = 'DE Germany ( DPMA )';
+
+
+
+
+
+		  	activeEUOfficeList.push('DE');
+
+
+
+
+	  officesURL['DK'] = 'http://www.dkpto.dk';
+	  officeNames['DK'] = 'Danish Patent and Trademark Office';
+	  completeOfficeList.push('DK');
+	  completeOfficeCountryNames.push('Denmark');
+
+	  	activeOfficeList.push('DK');
+
+
+
+				Tmdsview.applicationOffice['DK'] = 'DK Denmark ( DKPTO )';
+
+
+
+
+
+		  	activeEUOfficeList.push('DK');
+
+
+
+
+	  officesURL['EE'] = 'http://www.epa.ee';
+	  officeNames['EE'] = 'Patendiamet';
+	  completeOfficeList.push('EE');
+	  completeOfficeCountryNames.push('Estonia');
+
+	  	activeOfficeList.push('EE');
+
+
+
+				Tmdsview.applicationOffice['EE'] = 'EE Estonia ( EPA )';
+
+
+
+
+
+		  	activeEUOfficeList.push('EE');
+
+
+
+
+	  officesURL['ES'] = 'http://www.oepm.es ';
+	  officeNames['ES'] = 'Oficina Española de Patentes y Marcas';
+	  completeOfficeList.push('ES');
+	  completeOfficeCountryNames.push('Spain');
+
+	  	activeOfficeList.push('ES');
+
+
+
+				Tmdsview.applicationOffice['ES'] = 'ES Spain ( OEPM )';
+
+
+
+
+
+		  	activeEUOfficeList.push('ES');
+
+
+
+
+	  officesURL['FI'] = 'http://www.prh.fi/en.html ';
+	  officeNames['FI'] = 'Patentti- ja rekisterihallitus';
+	  completeOfficeList.push('FI');
+	  completeOfficeCountryNames.push('Finland');
+
+	  	activeOfficeList.push('FI');
+
+
+
+				Tmdsview.applicationOffice['FI'] = 'FI Finland ( PRH )';
+
+
+
+
+
+		  	activeEUOfficeList.push('FI');
+
+
+
+
+	  officesURL['FR'] = 'http://www.inpi.fr';
+	  officeNames['FR'] = 'Institut National de la Propriété Industrielle';
+	  completeOfficeList.push('FR');
+	  completeOfficeCountryNames.push('France');
+
+	  	activeOfficeList.push('FR');
+
+
+
+				Tmdsview.applicationOffice['FR'] = 'FR France ( INPI )';
+
+
+
+
+
+		  	activeEUOfficeList.push('FR');
+
+
+
+
+	  officesURL['GB'] = 'http://www.ipo.gov.uk/';
+	  officeNames['GB'] = 'Intellectual Property Office';
+	  completeOfficeList.push('GB');
+	  completeOfficeCountryNames.push('United Kingdom');
+
+	  	activeOfficeList.push('GB');
+
+
+
+				Tmdsview.applicationOffice['GB'] = 'GB United Kingdom ( UKIPO )';
+
+
+
+
+
+		  	activeEUOfficeList.push('GB');
+
+
+
+
+	  officesURL['GE'] = 'http://www.sakpatenti.gov.ge/en/';
+	  officeNames['GE'] = 'National Intellectual Property Center of Georgia';
+	  completeOfficeList.push('GE');
+	  completeOfficeCountryNames.push('Georgia');
+
+	  	activeOfficeList.push('GE');
+
+
+
+				Tmdsview.applicationOffice['GE'] = 'GE Georgia ( NIPCG )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('GE');
+
+
+
+	  officesURL['GR'] = 'http://gge.gov.gr';
+	  officeNames['GR'] = 'Ελληνική Δημοκρατία';
+	  completeOfficeList.push('GR');
+	  completeOfficeCountryNames.push('Greece');
+
+	  	activeOfficeList.push('GR');
+
+
+
+				Tmdsview.applicationOffice['GR'] = 'GR Greece ( GGE )';
+
+
+
+
+
+		  	activeEUOfficeList.push('GR');
+
+
+
+
+	  officesURL['HR'] = 'http://www.dziv.hr/';
+	  officeNames['HR'] = 'Državni zavod za intelektualno vlasništvo';
+	  completeOfficeList.push('HR');
+	  completeOfficeCountryNames.push('Croatia');
+
+	  	activeOfficeList.push('HR');
+
+
+
+				Tmdsview.applicationOffice['HR'] = 'HR Croatia ( DZIV )';
+
+
+
+
+
+		  	activeEUOfficeList.push('HR');
+
+
+
+
+	  officesURL['HU'] = 'http://www.sztnh.gov.hu';
+	  officeNames['HU'] = 'Szellemi Tulajdon Nemzeti Hivatala';
+	  completeOfficeList.push('HU');
+	  completeOfficeCountryNames.push('Hungary');
+
+	  	activeOfficeList.push('HU');
+
+
+
+				Tmdsview.applicationOffice['HU'] = 'HU Hungary ( HIPO )';
+
+
+
+
+
+		  	activeEUOfficeList.push('HU');
+
+
+
+
+	  officesURL['IE'] = 'http://www.patentsoffice.ie/ ';
+	  officeNames['IE'] = 'Irish Patents Office';
+	  completeOfficeList.push('IE');
+	  completeOfficeCountryNames.push('Ireland');
+
+	  	activeOfficeList.push('IE');
+
+
+
+				Tmdsview.applicationOffice['IE'] = 'IE Ireland ( IEIPO )';
+
+
+
+
+
+		  	activeEUOfficeList.push('IE');
+
+
+
+
+	  officesURL['IN'] = 'http://www.ipindia.nic.in/';
+	  officeNames['IN'] = 'Office of the Controller-General of Patents, Designs and Trademarks';
+	  completeOfficeList.push('IN');
+	  completeOfficeCountryNames.push('India');
+
+	  	activeOfficeList.push('IN');
+
+
+
+				Tmdsview.applicationOffice['IN'] = 'IN India ( CGDPTM )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('IN');
+
+
+
+	  officesURL['IS'] = 'http://www.els.is/en';
+	  officeNames['IS'] = 'Einkaleyfastofan - Icelandic Patent Office';
+	  completeOfficeList.push('IS');
+	  completeOfficeCountryNames.push('Iceland');
+
+	  	activeOfficeList.push('IS');
+
+
+
+				Tmdsview.applicationOffice['IS'] = 'IS Iceland ( ELS-IPO )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('IS');
+
+
+
+	  officesURL['IT'] = 'http://www.uibm.gov.it';
+	  officeNames['IT'] = 'Ufficio Italiano Brevetti e Marchi';
+	  completeOfficeList.push('IT');
+	  completeOfficeCountryNames.push('Italy');
+
+	  	activeOfficeList.push('IT');
+
+
+
+				Tmdsview.applicationOffice['IT'] = 'IT Italy ( UIBM )';
+
+
+
+
+
+		  	activeEUOfficeList.push('IT');
+
+
+
+
+	  officesURL['JP'] = 'http://www.jpo.go.jp';
+	  officeNames['JP'] = 'Japan Patent Office';
+	  completeOfficeList.push('JP');
+	  completeOfficeCountryNames.push('Japan');
+
+	  	activeOfficeList.push('JP');
+
+
+
+				Tmdsview.applicationOffice['JP'] = 'JP Japan ( JPO )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('JP');
+
+
+
+	  officesURL['KH'] = 'http://www.cambodiaip.gov.kh';
+	  officeNames['KH'] = 'Department of Industrial Property (DIP)';
+	  completeOfficeList.push('KH');
+	  completeOfficeCountryNames.push('Cambodia');
+
+	  	activeOfficeList.push('KH');
+
+
+
+				Tmdsview.applicationOffice['KH'] = 'KH Cambodia ( DIP )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('KH');
+
+
+
+	  officesURL['KR'] = 'http://www.kipo.go.kr/kpo/user.tdf?a=user.english.main.BoardApp&amp;c=1001';
+	  officeNames['KR'] = 'Korean Intellectual Property Office';
+	  completeOfficeList.push('KR');
+	  completeOfficeCountryNames.push('Republic of Korea');
+
+	  	activeOfficeList.push('KR');
+
+
+
+				Tmdsview.applicationOffice['KR'] = 'KR Republic of Korea ( KIPO )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('KR');
+
+
+
+	  officesURL['LT'] = 'http://www.vpb.gov.lt';
+	  officeNames['LT'] = 'The State Patent Bureau of the Republic of Lithuania';
+	  completeOfficeList.push('LT');
+	  completeOfficeCountryNames.push('Lithuania');
+
+	  	activeOfficeList.push('LT');
+
+
+
+				Tmdsview.applicationOffice['LT'] = 'LT Lithuania ( VPB )';
+
+
+
+
+
+		  	activeEUOfficeList.push('LT');
+
+
+
+
+	  officesURL['LV'] = 'http://www.lrpv.gov.lv ';
+	  officeNames['LV'] = 'Patent Office of the Republic of Latvia';
+	  completeOfficeList.push('LV');
+	  completeOfficeCountryNames.push('Latvia');
+
+	  	activeOfficeList.push('LV');
+
+
+
+				Tmdsview.applicationOffice['LV'] = 'LV Latvia ( LRPV )';
+
+
+
+
+
+		  	activeEUOfficeList.push('LV');
+
+
+
+
+	  officesURL['MA'] = 'http://www.ompic.org.ma/';
+	  officeNames['MA'] = 'Moroccan Industrial and Commercial Property Office';
+	  completeOfficeList.push('MA');
+	  completeOfficeCountryNames.push('Morocco');
+
+	  	activeOfficeList.push('MA');
+
+
+
+				Tmdsview.applicationOffice['MA'] = 'MA Morocco ( OMPIC )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('MA');
+
+
+
+	  officesURL['MD'] = 'http://agepi.gov.md';
+	  officeNames['MD'] = 'State Agency on Intellectual Property';
+	  completeOfficeList.push('MD');
+	  completeOfficeCountryNames.push('Moldova');
+
+	  	activeOfficeList.push('MD');
+
+
+
+				Tmdsview.applicationOffice['MD'] = 'MD Moldova ( AGEPI )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('MD');
+
+
+
+	  officesURL['MK'] = 'http://www.ippo.gov.mk/EN/Index_en.aspx';
+	  officeNames['MK'] = 'State Office of Industrial Property';
+	  completeOfficeList.push('MK');
+	  completeOfficeCountryNames.push('FYROM');
+
+	  	activeOfficeList.push('MK');
+
+
+
+				Tmdsview.applicationOffice['MK'] = 'MK FYROM ( SOIP )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('MK');
+
+
+
+	  officesURL['MT'] = 'http://commerce.gov.mt';
+	  officeNames['MT'] = 'Commerce Department, Industrial Property Registrations Directorate ';
+	  completeOfficeList.push('MT');
+	  completeOfficeCountryNames.push('Malta');
+
+	  	activeOfficeList.push('MT');
+
+
+
+				Tmdsview.applicationOffice['MT'] = 'MT Malta ( CD-IPRD )';
+
+
+
+
+
+		  	activeEUOfficeList.push('MT');
+
+
+
+
+	  officesURL['MX'] = 'https://www.gob.mx/impi';
+	  officeNames['MX'] = 'Instituto Mexicano de la Propiedad Industrial';
+	  completeOfficeList.push('MX');
+	  completeOfficeCountryNames.push('Mexico');
+
+	  	activeOfficeList.push('MX');
+
+
+
+				Tmdsview.applicationOffice['MX'] = 'MX Mexico ( IMPI )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('MX');
+
+
+
+	  officesURL['MY'] = 'http://www.myipo.gov.my';
+	  officeNames['MY'] = 'Intellectual Property Corporation of Malaysia';
+	  completeOfficeList.push('MY');
+	  completeOfficeCountryNames.push('Malaysia');
+
+	  	activeOfficeList.push('MY');
+
+
+
+				Tmdsview.applicationOffice['MY'] = 'MY Malaysia ( MyIPO )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('MY');
+
+
+
+	  officesURL['NO'] = 'http://www.patentstyret.no/en/';
+	  officeNames['NO'] = 'Norwegian Industrial Property Office';
+	  completeOfficeList.push('NO');
+	  completeOfficeCountryNames.push('Norway');
+
+	  	activeOfficeList.push('NO');
+
+
+
+				Tmdsview.applicationOffice['NO'] = 'NO Norway ( NIPO )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('NO');
+
+
+
+	  officesURL['PE'] = 'http://www.indecopi.gob.pe';
+	  officeNames['PE'] = 'Instituto Nacional de Defensa de la Competencia y de la Protección de la Propiedad Intelectual';
+	  completeOfficeList.push('PE');
+	  completeOfficeCountryNames.push('Peru');
+
+	  	activeOfficeList.push('PE');
+
+
+
+				Tmdsview.applicationOffice['PE'] = 'PE Peru ( INDECOPI )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('PE');
+
+
+
+	  officesURL['PH'] = 'http://www.ipophil.gov.ph';
+	  officeNames['PH'] = 'Intellectual Property Office of the Philippines';
+	  completeOfficeList.push('PH');
+	  completeOfficeCountryNames.push('Philippines');
+
+	  	activeOfficeList.push('PH');
+
+
+
+				Tmdsview.applicationOffice['PH'] = 'PH Philippines ( IPOPHIL )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('PH');
+
+
+
+	  officesURL['PL'] = 'http://www.uprp.gov.pl ';
+	  officeNames['PL'] = 'Urząd Patentowy Rzeczypospolitej Polskiej';
+	  completeOfficeList.push('PL');
+	  completeOfficeCountryNames.push('Poland');
+
+	  	activeOfficeList.push('PL');
+
+
+
+				Tmdsview.applicationOffice['PL'] = 'PL Poland ( PPO )';
+
+
+
+
+
+		  	activeEUOfficeList.push('PL');
+
+
+
+
+	  officesURL['PT'] = 'http://www.inpi.pt';
+	  officeNames['PT'] = 'Instituto Nacional da Propriedade Industrial';
+	  completeOfficeList.push('PT');
+	  completeOfficeCountryNames.push('Portugal');
+
+	  	activeOfficeList.push('PT');
+
+
+
+				Tmdsview.applicationOffice['PT'] = 'PT Portugal ( INPIPT )';
+
+
+
+
+
+		  	activeEUOfficeList.push('PT');
+
+
+
+
+	  officesURL['RO'] = 'http://www.osim.ro/';
+	  officeNames['RO'] = 'STATE OFFICE FOR INVENTIONS AND TRADEMARKS';
+	  completeOfficeList.push('RO');
+	  completeOfficeCountryNames.push('Romania');
+
+	  	activeOfficeList.push('RO');
+
+
+
+				Tmdsview.applicationOffice['RO'] = 'RO Romania ( OSIM )';
+
+
+
+
+
+		  	activeEUOfficeList.push('RO');
+
+
+
+
+	  officesURL['RS'] = 'http://www.zis.gov.rs/pocetna.1.html ';
+	  officeNames['RS'] = 'Intellectual Property Office of the Republic of Serbia';
+	  completeOfficeList.push('RS');
+	  completeOfficeCountryNames.push('Serbia');
+
+	  	activeOfficeList.push('RS');
+
+
+
+				Tmdsview.applicationOffice['RS'] = 'RS Serbia ( IPORS )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('RS');
+
+
+
+	  officesURL['RU'] = 'http://www.rupto.ru/rupto/portal/start?lang=en';
+	  officeNames['RU'] = 'Russian Federal Service for Intellectual Property, Patents and Trademarks';
+	  completeOfficeList.push('RU');
+	  completeOfficeCountryNames.push('Russian Federation');
+
+	  	activeOfficeList.push('RU');
+
+
+
+				Tmdsview.applicationOffice['RU'] = 'RU Russian Federation ( ROSPATENT )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('RU');
+
+
+
+	  officesURL['SE'] = 'http://www.prv.se/ ';
+	  officeNames['SE'] = 'Patent- och Registreringsverket';
+	  completeOfficeList.push('SE');
+	  completeOfficeCountryNames.push('Sweden');
+
+	  	activeOfficeList.push('SE');
+
+
+
+				Tmdsview.applicationOffice['SE'] = 'SE Sweden ( PRV )';
+
+
+
+
+
+		  	activeEUOfficeList.push('SE');
+
+
+
+
+	  officesURL['SI'] = 'http://www.uil-sipo.si/';
+	  officeNames['SI'] = 'Urad RS za intelektualno lastnino';
+	  completeOfficeList.push('SI');
+	  completeOfficeCountryNames.push('Slovenia');
+
+	  	activeOfficeList.push('SI');
+
+
+
+				Tmdsview.applicationOffice['SI'] = 'SI Slovenia ( SIPO )';
+
+
+
+
+
+		  	activeEUOfficeList.push('SI');
+
+
+
+
+	  officesURL['SK'] = 'http://www.indprop.gov.sk';
+	  officeNames['SK'] = 'Úrad priemyselného vlastníctva Slovenskej republiky';
+	  completeOfficeList.push('SK');
+	  completeOfficeCountryNames.push('Slovakia');
+
+	  	activeOfficeList.push('SK');
+
+
+
+				Tmdsview.applicationOffice['SK'] = 'SK Slovakia ( SKIPO )';
+
+
+
+
+
+		  	activeEUOfficeList.push('SK');
+
+
+
+
+	  officesURL['SM'] = 'http://www.usbm.sm/on-line/en/home.html';
+	  officeNames['SM'] = 'Ufficio di Stato Brevetti e Marchi';
+	  completeOfficeList.push('SM');
+	  completeOfficeCountryNames.push('San Marino');
+
+	  	activeOfficeList.push('SM');
+
+
+
+				Tmdsview.applicationOffice['SM'] = 'SM San Marino ( USBM )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('SM');
+
+
+
+	  officesURL['TN'] = 'http://www.innorpi.tn';
+	  officeNames['TN'] = 'Institut National de la Normalisation et de la Propriété Industrielle';
+	  completeOfficeList.push('TN');
+	  completeOfficeCountryNames.push('Tunisia');
+
+	  	activeOfficeList.push('TN');
+
+
+
+				Tmdsview.applicationOffice['TN'] = 'TN Tunisia ( INNORPI )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('TN');
+
+
+
+	  officesURL['TR'] = 'http://www.turkpatent.gov.tr/TurkPatent/?lang=en';
+	  officeNames['TR'] = 'Turkish Patent and Trademark Office';
+	  completeOfficeList.push('TR');
+	  completeOfficeCountryNames.push('Turkey');
+
+	  	activeOfficeList.push('TR');
+
+
+
+				Tmdsview.applicationOffice['TR'] = 'TR Turkey ( TURKPATENT )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('TR');
+
+
+
+	  officesURL['US'] = 'http://www.uspto.gov/';
+	  officeNames['US'] = 'The United States Patent and Trademark Office';
+	  completeOfficeList.push('US');
+	  completeOfficeCountryNames.push('United States');
+
+	  	activeOfficeList.push('US');
+
+
+
+				Tmdsview.applicationOffice['US'] = 'US United States ( USPTO )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('US');
+
+
+
+	  officesURL['EM'] = 'https://euipo.europa.eu/';
+	  officeNames['EM'] = 'European Union Intellectual Property Office';
+	  completeOfficeList.push('EM');
+	  completeOfficeCountryNames.push('EUIPO');
+
+	  	activeOfficeList.push('EM');
+
+
+
+				Tmdsview.applicationOffice['EM'] = 'EM EUIPO ( EUIPO )';
+
+
+
+
+
+		  	activeEUOfficeList.push('EM');
+
+
+
+
+	  officesURL['WO'] = 'http://www.wipo.int/portal/index.html.en';
+	  officeNames['WO'] = 'WIPO - World Intellectual Property Organisation';
+	  completeOfficeList.push('WO');
+	  completeOfficeCountryNames.push('WIPO');
+
+	  	activeOfficeList.push('WO');
+
+
+
+				Tmdsview.applicationOffice['WO'] = 'WO WIPO ( WIPO )';
+
+
+
+
+
+
+		  	activeNONEUOfficeList.push('WO');
+
+
+
+
+	Tmdsview.countries = [];
+
+	Tmdsview.countries.push('AP');
+
+	Tmdsview.countries.push('AF');
+
+	Tmdsview.countries.push('AX');
+
+	Tmdsview.countries.push('AL');
+
+	Tmdsview.countries.push('DZ');
+
+	Tmdsview.countries.push('AS');
+
+	Tmdsview.countries.push('AD');
+
+	Tmdsview.countries.push('AO');
+
+	Tmdsview.countries.push('AI');
+
+	Tmdsview.countries.push('AQ');
+
+	Tmdsview.countries.push('AG');
+
+	Tmdsview.countries.push('AR');
+
+	Tmdsview.countries.push('AM');
+
+	Tmdsview.countries.push('AW');
+
+	Tmdsview.countries.push('AU');
+
+	Tmdsview.countries.push('AT');
+
+	Tmdsview.countries.push('AZ');
+
+	Tmdsview.countries.push('BS');
+
+	Tmdsview.countries.push('BH');
+
+	Tmdsview.countries.push('BD');
+
+	Tmdsview.countries.push('BB');
+
+	Tmdsview.countries.push('BY');
+
+	Tmdsview.countries.push('BE');
+
+	Tmdsview.countries.push('BZ');
+
+	Tmdsview.countries.push('BX');
+
+	Tmdsview.countries.push('BJ');
+
+	Tmdsview.countries.push('BM');
+
+	Tmdsview.countries.push('BT');
+
+	Tmdsview.countries.push('BO');
+
+	Tmdsview.countries.push('BQ');
+
+	Tmdsview.countries.push('BA');
+
+	Tmdsview.countries.push('BW');
+
+	Tmdsview.countries.push('BV');
+
+	Tmdsview.countries.push('BR');
+
+	Tmdsview.countries.push('IO');
+
+	Tmdsview.countries.push('BN');
+
+	Tmdsview.countries.push('BG');
+
+	Tmdsview.countries.push('BF');
+
+	Tmdsview.countries.push('BI');
+
+	Tmdsview.countries.push('KH');
+
+	Tmdsview.countries.push('CM');
+
+	Tmdsview.countries.push('CA');
+
+	Tmdsview.countries.push('CV');
+
+	Tmdsview.countries.push('KY');
+
+	Tmdsview.countries.push('CF');
+
+	Tmdsview.countries.push('TD');
+
+	Tmdsview.countries.push('CL');
+
+	Tmdsview.countries.push('CN');
+
+	Tmdsview.countries.push('CX');
+
+	Tmdsview.countries.push('CC');
+
+	Tmdsview.countries.push('CO');
+
+	Tmdsview.countries.push('KM');
+
+	Tmdsview.countries.push('CG');
+
+	Tmdsview.countries.push('CK');
+
+	Tmdsview.countries.push('CR');
+
+	Tmdsview.countries.push('HR');
+
+	Tmdsview.countries.push('CU');
+
+	Tmdsview.countries.push('CW');
+
+	Tmdsview.countries.push('CY');
+
+	Tmdsview.countries.push('CZ');
+
+	Tmdsview.countries.push('CI');
+
+	Tmdsview.countries.push('CD');
+
+	Tmdsview.countries.push('DK');
+
+	Tmdsview.countries.push('DJ');
+
+	Tmdsview.countries.push('DM');
+
+	Tmdsview.countries.push('DO');
+
+	Tmdsview.countries.push('EM');
+
+	Tmdsview.countries.push('EC');
+
+	Tmdsview.countries.push('EG');
+
+	Tmdsview.countries.push('SV');
+
+	Tmdsview.countries.push('GQ');
+
+	Tmdsview.countries.push('ER');
+
+	Tmdsview.countries.push('EE');
+
+	Tmdsview.countries.push('ET');
+
+	Tmdsview.countries.push('MK');
+
+	Tmdsview.countries.push('FK');
+
+	Tmdsview.countries.push('FO');
+
+	Tmdsview.countries.push('FJ');
+
+	Tmdsview.countries.push('FI');
+
+	Tmdsview.countries.push('FR');
+
+	Tmdsview.countries.push('GF');
+
+	Tmdsview.countries.push('PF');
+
+	Tmdsview.countries.push('TF');
+
+	Tmdsview.countries.push('GA');
+
+	Tmdsview.countries.push('GM');
+
+	Tmdsview.countries.push('GE');
+
+	Tmdsview.countries.push('DE');
+
+	Tmdsview.countries.push('GH');
+
+	Tmdsview.countries.push('GI');
+
+	Tmdsview.countries.push('GR');
+
+	Tmdsview.countries.push('GL');
+
+	Tmdsview.countries.push('GD');
+
+	Tmdsview.countries.push('GP');
+
+	Tmdsview.countries.push('GU');
+
+	Tmdsview.countries.push('GT');
+
+	Tmdsview.countries.push('GG');
+
+	Tmdsview.countries.push('GN');
+
+	Tmdsview.countries.push('GW');
+
+	Tmdsview.countries.push('GY');
+
+	Tmdsview.countries.push('HT');
+
+	Tmdsview.countries.push('HM');
+
+	Tmdsview.countries.push('HN');
+
+	Tmdsview.countries.push('HK');
+
+	Tmdsview.countries.push('HU');
+
+	Tmdsview.countries.push('IS');
+
+	Tmdsview.countries.push('IN');
+
+	Tmdsview.countries.push('ID');
+
+	Tmdsview.countries.push('IR');
+
+	Tmdsview.countries.push('IQ');
+
+	Tmdsview.countries.push('IE');
+
+	Tmdsview.countries.push('IM');
+
+	Tmdsview.countries.push('IL');
+
+	Tmdsview.countries.push('IT');
+
+	Tmdsview.countries.push('JM');
+
+	Tmdsview.countries.push('JP');
+
+	Tmdsview.countries.push('JE');
+
+	Tmdsview.countries.push('JO');
+
+	Tmdsview.countries.push('KZ');
+
+	Tmdsview.countries.push('KE');
+
+	Tmdsview.countries.push('KI');
+
+	Tmdsview.countries.push('KP');
+
+	Tmdsview.countries.push('KW');
+
+	Tmdsview.countries.push('KG');
+
+	Tmdsview.countries.push('LA');
+
+	Tmdsview.countries.push('LV');
+
+	Tmdsview.countries.push('LB');
+
+	Tmdsview.countries.push('LS');
+
+	Tmdsview.countries.push('LR');
+
+	Tmdsview.countries.push('LY');
+
+	Tmdsview.countries.push('LI');
+
+	Tmdsview.countries.push('LT');
+
+	Tmdsview.countries.push('LU');
+
+	Tmdsview.countries.push('MO');
+
+	Tmdsview.countries.push('MG');
+
+	Tmdsview.countries.push('MW');
+
+	Tmdsview.countries.push('MY');
+
+	Tmdsview.countries.push('MV');
+
+	Tmdsview.countries.push('ML');
+
+	Tmdsview.countries.push('MT');
+
+	Tmdsview.countries.push('MH');
+
+	Tmdsview.countries.push('MQ');
+
+	Tmdsview.countries.push('MR');
+
+	Tmdsview.countries.push('MU');
+
+	Tmdsview.countries.push('YT');
+
+	Tmdsview.countries.push('MX');
+
+	Tmdsview.countries.push('FM');
+
+	Tmdsview.countries.push('MD');
+
+	Tmdsview.countries.push('MC');
+
+	Tmdsview.countries.push('MN');
+
+	Tmdsview.countries.push('ME');
+
+	Tmdsview.countries.push('MS');
+
+	Tmdsview.countries.push('MA');
+
+	Tmdsview.countries.push('MZ');
+
+	Tmdsview.countries.push('MM');
+
+	Tmdsview.countries.push('NA');
+
+	Tmdsview.countries.push('NR');
+
+	Tmdsview.countries.push('NP');
+
+	Tmdsview.countries.push('NL');
+
+	Tmdsview.countries.push('NC');
+
+	Tmdsview.countries.push('NZ');
+
+	Tmdsview.countries.push('NI');
+
+	Tmdsview.countries.push('NE');
+
+	Tmdsview.countries.push('NG');
+
+	Tmdsview.countries.push('NU');
+
+	Tmdsview.countries.push('NF');
+
+	Tmdsview.countries.push('MP');
+
+	Tmdsview.countries.push('NO');
+
+	Tmdsview.countries.push('OM');
+
+	Tmdsview.countries.push('OA');
+
+	Tmdsview.countries.push('PK');
+
+	Tmdsview.countries.push('PW');
+
+	Tmdsview.countries.push('PS');
+
+	Tmdsview.countries.push('PA');
+
+	Tmdsview.countries.push('PG');
+
+	Tmdsview.countries.push('PY');
+
+	Tmdsview.countries.push('PE');
+
+	Tmdsview.countries.push('PH');
+
+	Tmdsview.countries.push('PN');
+
+	Tmdsview.countries.push('PL');
+
+	Tmdsview.countries.push('PT');
+
+	Tmdsview.countries.push('QA');
+
+	Tmdsview.countries.push('KR');
+
+	Tmdsview.countries.push('RE');
+
+	Tmdsview.countries.push('RO');
+
+	Tmdsview.countries.push('RU');
+
+	Tmdsview.countries.push('RW');
+
+	Tmdsview.countries.push('BL');
+
+	Tmdsview.countries.push('SH');
+
+	Tmdsview.countries.push('KN');
+
+	Tmdsview.countries.push('LC');
+
+	Tmdsview.countries.push('MF');
+
+	Tmdsview.countries.push('PM');
+
+	Tmdsview.countries.push('VC');
+
+	Tmdsview.countries.push('WS');
+
+	Tmdsview.countries.push('SM');
+
+	Tmdsview.countries.push('ST');
+
+	Tmdsview.countries.push('SA');
+
+	Tmdsview.countries.push('SN');
+
+	Tmdsview.countries.push('RS');
+
+	Tmdsview.countries.push('SC');
+
+	Tmdsview.countries.push('SL');
+
+	Tmdsview.countries.push('SG');
+
+	Tmdsview.countries.push('SX');
+
+	Tmdsview.countries.push('SK');
+
+	Tmdsview.countries.push('SI');
+
+	Tmdsview.countries.push('SB');
+
+	Tmdsview.countries.push('SO');
+
+	Tmdsview.countries.push('ZA');
+
+	Tmdsview.countries.push('GS');
+
+	Tmdsview.countries.push('SS');
+
+	Tmdsview.countries.push('ES');
+
+	Tmdsview.countries.push('LK');
+
+	Tmdsview.countries.push('SD');
+
+	Tmdsview.countries.push('SR');
+
+	Tmdsview.countries.push('SJ');
+
+	Tmdsview.countries.push('SZ');
+
+	Tmdsview.countries.push('SE');
+
+	Tmdsview.countries.push('CH');
+
+	Tmdsview.countries.push('SY');
+
+	Tmdsview.countries.push('TW');
+
+	Tmdsview.countries.push('TJ');
+
+	Tmdsview.countries.push('TZ');
+
+	Tmdsview.countries.push('TH');
+
+	Tmdsview.countries.push('TL');
+
+	Tmdsview.countries.push('TG');
+
+	Tmdsview.countries.push('TK');
+
+	Tmdsview.countries.push('TO');
+
+	Tmdsview.countries.push('TT');
+
+	Tmdsview.countries.push('TN');
+
+	Tmdsview.countries.push('TR');
+
+	Tmdsview.countries.push('TM');
+
+	Tmdsview.countries.push('TC');
+
+	Tmdsview.countries.push('TV');
+
+	Tmdsview.countries.push('UG');
+
+	Tmdsview.countries.push('UA');
+
+	Tmdsview.countries.push('AE');
+
+	Tmdsview.countries.push('GB');
+
+	Tmdsview.countries.push('US');
+
+	Tmdsview.countries.push('UM');
+
+	Tmdsview.countries.push('UY');
+
+	Tmdsview.countries.push('UZ');
+
+	Tmdsview.countries.push('VU');
+
+	Tmdsview.countries.push('VA');
+
+	Tmdsview.countries.push('VE');
+
+	Tmdsview.countries.push('VN');
+
+	Tmdsview.countries.push('VG');
+
+	Tmdsview.countries.push('WO');
+
+	Tmdsview.countries.push('WF');
+
+	Tmdsview.countries.push('EH');
+
+	Tmdsview.countries.push('YE');
+
+	Tmdsview.countries.push('ZM');
+
+	Tmdsview.countries.push('ZW');
+
+
+
+	/* ***** ST13 - results of the search ****** */
+	var BOOKMARK_QUERY = "null";
+	var BOOK_MARK_DETAIL_MODE= "null";
+	var BOOK_MARK_QUERY_MODE = "null";
+	var BASICSEARCH_MODE = "null";
+	/* ***** ST13 - results of the search ****** */
+
+	/* set the default language from default config or from the cookie */
+	var  activeOfficesNumber = parseInt('56');
+	var  globalAppLang="en";
+	var  columnModelObj = {"tmName":true,"tmNameOrder":2,"tmOffice":true,"tmOfficeOrder":3,"designatedTerritory":true,"designatedTerritoryOrder":4,"markIdAppNumber":true,"markIdAppNumberOrder":5,"markIdRegNumber":true,"markIdRegNumberOrder":6,"tmStatus":true,"tmStatusOrder":7,"tmType":true,"tmTypeOrder":11,"applicantName":true,"applicantNameOrder":9,"niceClasses":true,"niceClassesOrder":8,"applDate":true,"applDateOrder":10,"viennaCodes":false,"viennaCodesOrder":12,"graphicRepresentation":true,"graphicRepresentationOrder":1,"startOfOpposition":false,"startOfOppositionOrder":13,"oppositionDeadLine":false,"oppositionDeadLineOrder":14,"registrationDate":true,"registrationDateOrder":15,"seniorityIndicator":true,"seniorityIndicatorOrder":16};
+    var  maxElementsForPagination =  200;
+    var  appSearchCriteria = {"LV":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"LT":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"HR":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"RO":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"HU":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"MK":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"DE":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"MD":[],"DK":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"MA":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"IE":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"AT":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"US":["tm","ty","anm","nc","vc","ad","oc","ST13","sc","an","SeniorityIndicator","tp"],"AR":[],"MX":["tm","ty","anm","nc","vc","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"IN":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"MY":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","tp"],"IS":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"IT":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"BA":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2"],"MT":["tm","ty","anm","nc","vc","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"PT":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"EM":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp","Search image"],"ES":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"AL":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2"],"EE":["tm","ty","anm","nc","vc","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"AP":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2"],"JP":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","tp"],"GE":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","tp"],"BX":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"BR":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2"],"GB":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp","Search image"],"TN":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"CA":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","tp"],"TR":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"NO":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"FR":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp","Search image"],"BG":["tm","ty","anm","nc","vc","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"KH":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","tp"],"FI":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"WO":["tm","ty","anm","nc","vc","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"CZ":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"CY":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"KR":["tm","ty","anm","nc","vc","ad","oc","ST13","sc","an","SeniorityIndicator","tp"],"SE":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"SI":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"SK":["tm","ty","anm","nc","vc","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"SM":[],"PL":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"RS":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","tp"],"CH":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"RU":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","SeniorityIndicator","tp"],"GR":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"PH":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"PE":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp"],"CO":["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","tp"]};
+	var  searchCriteriaList = ["tm","ty","anm","nc","vc","od","ad","oc","ST13","sc","an","RegistrationDate","regd","RegistrationNumber","regn","anm2","SeniorityIndicator","tp","Search image","tmsort"];
+	var  GRID_UPDATE_INTERVAL_IN_SECONDS  = parseInt("4");
+	var  MAX_NUM_OF_LOOPS = parseInt("10");
+	var  EXTRA_TIME_BEFORE_CLOSE = parseInt("0");
+	var  CLOSE_MONITOR_AUTOMATICALLY = true;
+	var  NUMBERS_OF_RESULTS_PER_PAGE = "10,20,30,50,75,100";
+	var  MAX_NUMBER_OF_TABS = 5;
+	var  MAX_NUMBER_OF_EXCEL_ROWS = 100;
+        var  firstYearDateRange = "1700";
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" >
+
+
+
+		var authenticated = false;
+
+
+	var globalBrandUrl = "http://www.wipo.int/branddb/en/index.jsp?q=";
+	var globalisNiceClassServiceActive = true;
+
+	var maxImageSize =  2048;
+    var allowedExtensions = JSON.parse('["jpg", "jpeg", "png", "gif", "tif", "tiff"]');
+
+/*
+
+			var sortingBy = "score";
+
+
+	*/
+
+	/******************/
+	/* LABELS SECTION */
+	/******************/
+
+	Labels = new Object();
+	var officeTmTypes = [];
+	Labels.officeTmTypes = new Array();
+
+		officeTmTypes.push('3D shape');
+		Labels.officeTmTypes['3D shape'] = "3D shape";
+
+		officeTmTypes.push('Colour');
+		Labels.officeTmTypes['Colour'] = "Colour";
+
+		officeTmTypes.push('Combination of colours');
+		Labels.officeTmTypes['Combination of colours'] = "Combination of colours";
+
+		officeTmTypes.push('Combined');
+		Labels.officeTmTypes['Combined'] = "Combined";
+
+		officeTmTypes.push('Figurative');
+		Labels.officeTmTypes['Figurative'] = "Figurative";
+
+		officeTmTypes.push('General mark');
+		Labels.officeTmTypes['General mark'] = "General mark";
+
+		officeTmTypes.push('Hologram');
+		Labels.officeTmTypes['Hologram'] = "Hologram";
+
+		officeTmTypes.push('Kennfaden');
+		Labels.officeTmTypes['Kennfaden'] = "Kennfaden";
+
+		officeTmTypes.push('Motion');
+		Labels.officeTmTypes['Motion'] = "Motion";
+
+		officeTmTypes.push('Multimedia');
+		Labels.officeTmTypes['Multimedia'] = "Multimedia";
+
+		officeTmTypes.push('Number');
+		Labels.officeTmTypes['Number'] = "Number";
+
+		officeTmTypes.push('Olfactory');
+		Labels.officeTmTypes['Olfactory'] = "Olfactory";
+
+		officeTmTypes.push('Other');
+		Labels.officeTmTypes['Other'] = "Other";
+
+		officeTmTypes.push('Packing');
+		Labels.officeTmTypes['Packing'] = "Packing";
+
+		officeTmTypes.push('Pattern');
+		Labels.officeTmTypes['Pattern'] = "Pattern";
+
+		officeTmTypes.push('Position');
+		Labels.officeTmTypes['Position'] = "Position";
+
+		officeTmTypes.push('Sound');
+		Labels.officeTmTypes['Sound'] = "Sound";
+
+		officeTmTypes.push('Stylized characters');
+		Labels.officeTmTypes['Stylized characters'] = "Stylized characters";
+
+		officeTmTypes.push('Undefined');
+		Labels.officeTmTypes['Undefined'] = "Undefined";
+
+		officeTmTypes.push('Word');
+		Labels.officeTmTypes['Word'] = "Word";
+
+
+	/* Advanced Search */
+	Labels.advancedSearch = "Advanced search";
+	Labels.closeadvancedSearch = "Basic search";
+	Labels.filters = "Filters";
+	Labels.closefilters = "Close filter";
+	Labels.oneOrMoreDesignatedTerritories = "Select one or more designated territories";
+	Labels.oneOrMoreOffices = "Select one or more offices";
+	Labels.selectOneOrMore = "All";
+	Labels.advancedSearchEuropean = "European";
+	Labels.advancedSearchEuropeanNo = "Non-european";
+        Labels.selectAllEUOptions = "Select all EU member states";
+        Labels.selectAllNonEUOptions = "Select all Non-EU member states";
+	/* Advanced Search errors*/
+	Labels.advancedSearchInvalidInput = "Invalid input!"; /*Invalid input!*/
+	Labels.advancedSearchNoCriterion = "Please specify at least one criterion to perform search!"; /* Please specify at least one criterion to perform search! */
+        Labels.advanceSearchAllCountriesSelected = "All countries selected in Designated territories"; /*All countries selected in Designated territories */
+	Labels.advancedSearchEarlyDate = "Date cannot be set prior to"; /* From date cannot be set to a date prior to 01-01-1800! */
+	Labels.advancedSearchWrongDateFormat = "Wrong date format!"; /* Wrong date format! */
+	Labels.advancedSearchWrongNiceclassFormat = "Wrong Nice class format!"; /* Wrong Nice Class format! */
+	Labels.advancedSearchWrongViennacodeFormat = "Wrong Vienna code format!"; /* Wrong Vienna Code format! */
+	Labels.advancedSearchTyNcVcStandalone = "Mark type, Nice class or Vienna code cannot be used as standalone search criteria!"; /* Mark Type, Nice Class or Vienna Code cannot be used as standalone search criteria! */
+	Labels.advancedSearchTmNotAvailable = "Trade mark name search criterion is not available for"; /* Trade Mark Name search criteria is not available for */
+	Labels.advancedSearchTyNotAvailable = "Mark type search criterion is not available for"; /* Mark Type search criteria is not available for */
+	Labels.advancedSearchAnmNotAvailable = "Applicant name search criterion is not available for"; /* Applicant Name search criteria is not available for */
+	Labels.advancedSearchNcNotAvailable = "Nice class search criterion is not available for"; /* Nice Class search criteria is not available for */
+	Labels.advancedSearchVcNotAvailable = "Vienna code search criterion is not available for"; /* Vienna Code search criteria is not available for */
+	Labels.advancedSearchOdNotAvailable = "Opposition search criterion is not available for"; /* Opposition Period search criteria is not available for */
+	Labels.advancedSearchAdNotAvailable = "Application date search criterion is not available for"; /* Application Date search criteria is not available for */
+	Labels.advancedSearchCharacterNotAllowed = "The following character cannot be used in a search input:"; /* The following character cannot be used in a search input: */
+	Labels.advancedSearchStandaloneInput = "\"*\" cannot be used as a standalone search input."; /* &quot;*&quot; cannot be used as a standalone search input. */
+	Labels.advancedSearchComplexInput = "Advanced search cannot be opened for such a complex input"; /* Advanced search cannot be opened for such a complex input */
+	Labels.advancedSearchStandaloneCriteria = "cannot be used as standalone search criteria!"; /* cannot be used as standalone search criteria! */
+	Labels.advancedSearchNoCriterion = "Please specify at least one criterion to perform search!";
+
+	/* Nice Classes Disable Text*/
+	Labels.niceClassesEuroclassServiceDisabled = "Nice class search service is not available in this moment.";
+
+	/* Search */
+	Labels.errorInvalidInput = "Invalid input!";
+	Labels.listOfResults = "List of results";
+	Labels.expandWIPO = "Expand WIPO designated countries";
+	Labels.print = "Print";
+	Labels.exportExcel = "Export to Excel";
+	Labels.exportExcelRowsExceed = "Only the first {0} selected rows will be exported";
+	Labels.globalBrand ="WIPO Global Brand DB";
+	Labels.globalBrandTooltip= "Perform your search in WIPO\'s Global Brand Database";
+        Labels.no_tm_selected="Please select one or more trademarks";
+	Labels.resetSort = "search.reset.sort";
+
+	/* Offices monitor */
+	Labels.warningCriteria="Criteria";
+	Labels.warningIsNotavailable="is not available for";
+	Labels.warningAreNotavailable="are not available for";
+	Labels.theNextOffices ="The next offices";
+	Labels.doNotSupport = "do not support this search criteria";
+
+	/*RESULTS TABLE COLUMNS*/
+	Labels.tmAlertsColumn = "Alerts";
+	Labels.tmNameColumn = "Trade mark name";
+	Labels.tmOfficeColumn = "Trade mark office";
+	Labels.tmDesignatedTerritory = "Designated territory";
+	Labels.tmApplicationNumberColumn = "Application number";
+    Labels.tmReferenceNumberColumn = "Registration number";
+	Labels.tmStatusColumn = "Trade mark status";
+	Labels.tmViennaCodeColumn = "Vienna code";
+	Labels.tmNiceClassColumn = "Nice class";
+	Labels.tmApplicantNameColumn = "Applicant name";
+	Labels.tmApplicationDateColumn = "Application date";
+	Labels.tmRegistrationDateColumn = "Registration date";
+	Labels.tmOppositionPeriodColumn = "Opposition period";
+	Labels.tmTypeColumn = "Trade mark type";
+	Labels.tmRepresentationColumn = "Graphic representation";
+	Labels.tmOppositionDeadlineColumn = "Opposition deadline";
+	Labels.tmSeniorityIndicatorColumn = "Seniority claimed";
+	Labels.tmSeniorityIndicatorColumnNo = "No";
+	Labels.tmSeniorityIndicatorColumnYes = "Yes";
+	Labels.resultsNextpageTooltip = "No more results allowed";
+
+	/*RESULTS TABLE VALUES*/
+	Labels.statusfiled = "Filed";
+	Labels.statusregistered = "Registered";
+	Labels.statusended = "Ended";
+	Labels.statusexpired = "Expired";
+
+	/*TYPES*/
+	Labels.typeFigurative = "Figurative";
+	Labels.typeWord = "Word";
+	Labels.typeOther = "Other";
+	Labels.type3d = "3D shape";
+	Labels.typeChimney = "Chimney";
+	Labels.typeColour = "Colour";
+	Labels.typeCombinationOfColours = "Combination of colours";
+	Labels.typeCombined = "Combined";
+	Labels.typeGeneralMark = "General mark";
+	Labels.typeHologram = "Hologram";
+	Labels.typeKennfaden = "Kennfaden";
+	Labels.typeMotion = "Motion";
+	Labels.typeMultimedia = "Multimedia";
+	Labels.typeMunicipal = "Municipal";
+	Labels.typeNumber = "Number";
+	Labels.typeOlfactory = "Olfactory";
+	Labels.typePacking = "Packing";
+	Labels.typeSound = "Sound";
+	Labels.typeStylizedCharacters = "Stylized characters";
+	Labels.typeUndefined = "Undefined";
+    Labels.typePosition = "Position";
+    Labels.typePattern = "Pattern";
+
+
+	/*RESULTS TABLE PAGGING MESSAGES*/
+	Labels.viewOf = "Displaying results {0} - {1} of {2}";
+	Labels.view = "View";
+	Labels.nothing = "Nothing to show";
+	Labels.loading = "Loading...";
+	Labels.pageOf = "Page {0} of {1}";
+	Labels.page = "Page";
+	Labels.officesFinished = "offices finished";
+
+	Labels.maxNumberTabs = "Max number of tabs opened";
+	Labels.checkOne = "grid.viewhide.columns.check.one.key";
+
+	/*RESULTS TABLE BUTTON MESSAGES*/
+	Labels.viewhidecolumns = "View\/Hide columns";
+	Labels.viewhidecolumnsTooltip = "Click here to select columns to view";
+	Labels.resetcolumns = "Reset columns";
+	Labels.resetcolumnsTooltip = "Click here to reset columns to the original order";
+	Labels.remembercolumns = "Remember columns";
+	Labels.remembercolumnsTooltip = "Click here to remember the columns order and width";
+	Labels.reloadGrid = "Reload grid";
+	Labels.togglesearchtoolbar = "Toggle search toolbar";
+
+	Labels.inviteAFriend = "Share with a friend";
+	Labels.yourText = "Your text";
+	Labels.outof = "out of";
+	Labels.resultsSearchOK = "Completed";
+	Labels.resultsSearchWorking = "Working...";
+	Labels.resultssearchError = "Error";
+	Labels.resultsExceeded = "Max number of results exceeded";
+	Labels.extraResultsFor = "extra results for";
+	Labels.toViewMoreResults = "To view more results, please refine your search criteria since we can only show up to";
+	Labels.resultsPerOffice = "results per office";
+	Labels.noResultsKey="No results";
+        Labels.noResultsPleaseTryKey="No results found. Please try with different search\/filter criteria.";
+	Labels.of = "of";
+	Labels.submit = "Submit";
+	Labels.cancel = "Cancel";
+	Labels.close = "Close";
+	Labels.open = "Open";
+	Labels.FindTerm = "Find term";
+	Labels.noNameForThisTm = "results.no.name.for.this.tm";
+	Labels.termNotFound ="Term not found";
+
+	/*LOGIN*/
+	Labels.loginApply = "Apply";
+	Labels.loginPassword = "Password";
+	Labels.loginNewpassword = "New password";
+
+	/*DRAG AND DROP*/
+	Labels.dropFile = "Drop me!";
+	Labels.dropFileHere = "Drop Image Here";
+
+
+	/*IMAGESEARCH*/
+	Labels.imageSearchUploadingFile  = "Uploading";
+	Labels.imageSearchUploadFailed = "Upload failed. Please try again.";
+	Labels.imageSearchSuccessfully  = "successfully uploaded.";
+	Labels.imageSearchUploadError   = "An error occurred and the upload failed.";
+	Labels.imageSearchExtensionNotSupported = "Extension {0} is not supported.";
+	Labels.imageSearchFileSizeTooLarge = "File size exceeded. Maximum size allowed: {0} MB.";
+
+	Labels.serviceProvidedBy = "Service provided by";
+
+	function loadOfficesCountries() {
+		var offices = [{"applicationOfficePk":{"office":{"id":48,"country":{"id":29,"name":"AL","description":"Albania","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"GDIP","officeCode":"AL","name":"General Directorate of Industrial Property","telephone":"0035542234412","address":"Bulevardi “Zhan D’Ark”, Prona nr.33, Shtëpia e Ushtarakëve, Tirana, Albania","openingHours":"Monday to Thursday 8:00 - 16:30. Friday 8:00 - 14:00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.dppm.gov.al/","applicationPageUrl":"http://www.dppm.gov.al/","email":"mailinf@alpto.gov.al","languages":"en","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jul 4, 2016 12:00:00 AM","dateLastUpdate":"Dec 5, 2017 1:58:20 AM","numberOfDocuments":13360,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":49,"country":{"id":250,"name":"AP","description":"ARIPO","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"ARIPO","officeCode":"AP","name":"African Regional Intellectual Property Organization","telephone":"002634794065","address":"11 Natal Road, Belgravia, Harare, Zimbabwe P.O.Box 4228","openingHours":"From 8 am to 4:30 pm","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.aripo.org","applicationPageUrl":"http://eservice.aripo.org/pdl/pqs/quickSearchScreen.do","email":"mail@aripo.org","languages":"en","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Dec 7, 2015 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:22 AM","numberOfDocuments":2318,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":75,"country":{"id":34,"name":"AR","description":"Argentina","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"INPI","officeCode":"AR","name":"Instituto Nacional de la Propiedad Industrial","telephone":"(5411)43444902","address":"Paseo Colón 717 - C.P. 1063 Buenos Aires","openingHours":"-","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.inpi.gob.ar","applicationPageUrl":"https://portaltramites.inpi.gob.ar/Clasico/Docs/ResultadosConsultas/ResultadoSolicitudMarca2.asp?Va\u003d$AN$","email":"infomarcas@inpi.gob.ar","languages":"es","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Nov 20, 2017 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:18 AM","numberOfDocuments":2597342,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":16,"country":{"id":1,"name":"AT","description":"Austria","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"OPA","officeCode":"AT","name":"Österreichischen Patentamt","telephone":"+43 01 534 2476","address":"Dresdner Straße 87 Postfach 95 1200 Wien ","openingHours":"Monday-Friday: 9.00-14.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.patentamt.at/","applicationPageUrl":"http://onlinesearch.patentamt.at/Marke/Anmeldung/$APPNUMBER$/Marke/Schnellinfo","email":"info@patentamt.at","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Nov 13, 2012 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:23 AM","numberOfDocuments":174758,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":44,"country":{"id":48,"name":"BA","description":"Bosnia and Herzegovina","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"IIP-BIH","officeCode":"BA","name":"Institute for Intellectual Property of Bosnia and Herzegovina","telephone":"+38736-334381","address":"88000 Mostar,Kneza Domagoja bb","openingHours":"Monday - Friday 9 am to 3 pm","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.ipr.gov.ba/en/","applicationPageUrl":"http://www.ipr.gov.ba/en/","email":"info@ipr.gov.ba","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Dec 7, 2015 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:21 AM","numberOfDocuments":24085,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":13,"country":{"id":2,"name":"BG","description":"Bulgaria","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"BPO","officeCode":"BG","name":"Patent Office of the Republic of Bulgaria","telephone":"00 359 2 9701321","address":"Sofia 1040, 52 b Dr. G.M.Dimitrov Blvd. Bulgaria","openingHours":"Monday-Friday: 9.00-17.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.bpo.bg/","applicationPageUrl":"https://portal.bpo.bg/en/rd?key\u003d$APPNUMBER$","email":"portal@bpo.bg","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Dec 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:18 AM","numberOfDocuments":142240,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":42,"country":{"id":50,"name":"BR","description":"Brazil","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"INPI","officeCode":"BR","name":"Instituto Nacional da Propriedade Industrial","telephone":"(+5521)3037-3000","address":"Rua São Bento nº 1, Centro CEP 20090-010 Rio de Janeiro","openingHours":"Monday - Friday 10 am to 4.30 pm","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.inpi.gov.br","applicationPageUrl":"https://gru.inpi.gov.br/pePI/servlet/MarcasServletController?Action\u003dsearchMarca\u0026tipoPesquisa\u003dBY_NUM_PROC\u0026Source\u003dOAMI\u0026NumPedido\u003d$AN$","email":"cgcom@inpi.gov.br","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Feb 29, 2016 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:22 AM","numberOfDocuments":3499056,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":1,"country":{"id":3,"name":"BX","description":"Benelux","european":true,"designatedCountry":false,"grouped":false,"idparent":26},"shortname":"BOIP","officeCode":"BX","name":"Benelux Office for Intellectual Property","telephone":"+31 70 349 12 42","address":"Bordewijklaan 15 - NL-2591 XR The Hague - The Netherlands","openingHours":"8:30 to 17:00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"https://www.boip.int/en","applicationPageUrl":"http://register.boip.int/bmbonline/search/bynumber/perform.do?markNumber\u003d$APPNUMBER$\u0026markNumberType\u003dAPP","email":"info@boip.int","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Apr 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:22 AM","numberOfDocuments":370785,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":43,"country":{"id":56,"name":"CA","description":"Canada","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"CIPO","officeCode":"CA","name":"Canadian Intellectual Property Office","telephone":"18199340544","address":"Place du Portage I 50 Victoria Street, Room C-114 Gatineau, Québec K1A OC9","openingHours":"8:30 a.m. to 5:00 p.m. (Ottawa time) Monday to Friday","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.cipo.ic.gc.ca/eic/site/cipointernet-internetopic.nsf/eng/home","applicationPageUrl":"http://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/vwTrdmrk.do?lang\u003deng\u0026status\u003d\u0026appKey\u003d$AN$\u0026startingDocumentIndexOnPage\u003d1","email":"cipo.contact@ic.gc.ca","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Sep 14, 2015 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:20 AM","numberOfDocuments":1557794,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":47,"country":{"id":170,"name":"CH","description":"Switzerland","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"IGE-IPI","officeCode":"CH","name":"Swiss Federal Institute of Intellectual Property","telephone":"(+41)313777777","address":"Stauffacherstrasse 65/59g, CH-3003 Bern","openingHours":"Monday through Friday, 8.00 to 12.00 and 13.00 to 17.00.","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"https://www.ige.ch/en.html","applicationPageUrl":"https://www.swissreg.ch/srclient/faces/jsp/trademark/sr300.jsp?language\u003den\u0026section\u003dtm\u0026id\u003d$AN$","email":"info@ipi.ch","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Oct 26, 2015 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:20 AM","numberOfDocuments":397895,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":57,"country":{"id":62,"name":"CO","description":"Colombia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"SIC","officeCode":"CO","name":"Superintendencia de Industria y Comercio","telephone":"005715870000","address":"Carrera 13 No. 27 - 00, Pisos 1, 3, 4, 5, 6, 7 y 10 Bogotá D.C.","openingHours":"Monday to Friday from 8:00 a.m. to 4:30 p.m","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.sic.gov.co","applicationPageUrl":"http://visordocs.sic.gov.co:8080/consultaDocs/markViewer.jsf?application\u003d$AN$","email":"info@sic.gov.co","languages":"es","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jun 19, 2017 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:14 AM","numberOfDocuments":705136,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":17,"country":{"id":4,"name":"CY","description":"Cyprus","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"DRCOR","officeCode":"CY","name":"Cyprus Trademark Office","telephone":"+35722404301","address":"Corner Makarios Av. \u0026 Karpenisiou Str. \"Xenios Building\", 1427 Nicosia, CYPRUS","openingHours":"Monday-Friday: 8.30-15.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.mcit.gov.cy/mcit/drcor/drcor.nsf/index_gr/index_gr?OpenDocument","applicationPageUrl":"http://www.mcit.gov.cy/mcit/drcor/drcor.nsf/index_gr/index_gr?OpenDocument","email":"deptcomp@drcor.mcit.gov.cy","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jul 1, 2013 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:17 AM","numberOfDocuments":85806,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":4,"country":{"id":5,"name":"CZ","description":"Czech Republic","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"IPOCZ","officeCode":"CZ","name":"Industrial Property Office of the Czech Republic","telephone":"+420-220383111","address":"Antonina Cermaka 2a, 16068 Prague 6 - Czech Republic","openingHours":"08:00 to 16:00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.upv.cz","applicationPageUrl":"http://isdv.upv.cz/portal/pls/portal/portlets.oza.det?pcipv\u003d$APPNUMBER$\u0026plang\u003den","email":"posta@upv.cz","languages":"The only valid and binding list of goods and services is the Czech one. The English version is informative.","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Apr 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:17 AM","numberOfDocuments":250731,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":18,"country":{"id":6,"name":"DE","description":"Germany","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"DPMA","officeCode":"DE","name":"Deutsches Patent- und Markenamt","telephone":"+49 89 2195-0","address":"Zweibrückenstraße 12, 80331 München, Germany","openingHours":"Monday-Thursday 9.00-15.00 , Friday 9:00-14:00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.dpma.de","applicationPageUrl":"http://register.dpma.de/DPMAregister/marke/register/$APPNUMBER$/DE?lang\u003den","email":"info@dpma.de","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Nov 13, 2012 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:19 AM","numberOfDocuments":1979609,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":2,"country":{"id":7,"name":"DK","description":"Denmark","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"DKPTO","officeCode":"DK","name":"Danish Patent and Trademark Office","telephone":"+45 4350 8000","address":"Helgehøj Allé 81, 2630 Taastrup - Denmark","openingHours":"9 am to 4 pm (Danish time)","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.dkpto.dk","applicationPageUrl":"     http://onlineweb.dkpto.dk/pvsonline/Varemaerke?action\u003d107\u0026sagID\u003d$APPNUMBER$","email":"pvs@dkpto.dk","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Apr 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:15 AM","numberOfDocuments":288225,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":12,"country":{"id":8,"name":"EE","description":"Estonia","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"EPA","officeCode":"EE","name":"Patendiamet","telephone":"627 7900","address":"Toompuiestee 7, Tallinn 15041","openingHours":"Monday to Friday, from 8:00 - 15:00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.epa.ee","applicationPageUrl":"http://andmebaas.epa.ee/avalik/#/trademarks?nr\u003d$APPNUMBER$","email":"patendiamet@epa.ee","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Oct 25, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:18 AM","numberOfDocuments":58294,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":9,"country":{"id":9,"name":"ES","description":"Spain","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"OEPM","officeCode":"ES","name":"Oficina Española de Patentes y Marcas","telephone":"902 157 530 ","address":"Paseo de la Castellana, 75 - 28046 MADRID","openingHours":"9:00h to 18:00h (July and August 9:00h to 15:00h)","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.oepm.es ","applicationPageUrl":"http://consultas2.oepm.es/ceo/jsp/busqueda/consultaExterna.xhtml?numExp\u003d$APPNUMBER$","email":"informacion@oepm.es","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Aug 9, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:14 AM","numberOfDocuments":868307,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":19,"country":{"id":10,"name":"FI","description":"Finland","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"PRH","officeCode":"FI","name":"Patentti- ja rekisterihallitus","telephone":"00 358-96939500","address":"Arkadiankatu 6 A, Helsinki P.O.Box 1140, FI-00101 Helsinki","openingHours":"Mon-Fri 8.00 -16.15","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.prh.fi/en.html ","applicationPageUrl":"http://tavaramerkki.prh.fi/web/tietopalvelu/haku/?appNum\u003d$APPNUMBER$","email":"registry@prh.fi","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Apr 23, 2012 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:13 AM","numberOfDocuments":181871,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":14,"country":{"id":11,"name":"FR","description":"France","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"INPI","officeCode":"FR","name":"Institut National de la Propriété Industrielle","telephone":"0820 210 211","address":"15 rue des Minimes, CS 50001, 92677 COURBEVOIE Cedex, FR","openingHours":"Monday-Friday: 9.00-18.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.inpi.fr","applicationPageUrl":"http://bases-marques.inpi.fr/Typo3_INPI_Marques/marques_fiche_resultats.html?id\u003dFR$APPNUMBER$","email":"contact@inpi.fr","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"May 2, 2011 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:19 AM","numberOfDocuments":2652412,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":8,"country":{"id":12,"name":"GB","description":"United Kingdom","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"UKIPO","officeCode":"GB","name":"Intellectual Property Office","telephone":"+441633814000","address":"Concept House - Cardiff Road - Newport - South Wales - NP10 8QQ - United Kingdom","openingHours":"09:00 to 17:00 UK time","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.ipo.gov.uk/","applicationPageUrl":"http://www.ipo.gov.uk/tmcase/Results/1/$APPNUMBER$","email":"information@ipo.gov.uk","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Apr 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:16 AM","numberOfDocuments":1121229,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":59,"country":{"id":82,"name":"GE","description":"Georgia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"NIPCG","officeCode":"GE","name":"National Intellectual Property Center of Georgia","telephone":"+995322252533","address":"5, Antioch Str. 3300 Mtskheta, Georgia","openingHours":"09:00-18:00 Monday-Friday","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.sakpatenti.gov.ge/en/","applicationPageUrl":"http://www.sakpatenti.gov.ge/en/search_engine/view/$AN$/3/","email":"info@sakpatenti.org.ge","languages":"ka","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jul 7, 2016 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:19 AM","numberOfDocuments":33631,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":20,"country":{"id":13,"name":"GR","description":"Greece","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"GGE","officeCode":"GR","name":"Ελληνική Δημοκρατία","telephone":"00 30-2103893000","address":"Section B, Kaningos Suare, Gr-10181 Athens, Greece","openingHours":"Monday-Friday: 9.00-14.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://gge.gov.gr","applicationPageUrl":"http://www.gge.gr","email":"gge@gge.gr","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Nov 11, 2013 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:20 AM","numberOfDocuments":253819,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":28,"country":{"id":67,"name":"HR","description":"Croatia","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"DZIV","officeCode":"HR","name":"Državni zavod za intelektualno vlasništvo","telephone":"385 1 61 06 100","address":"Ulica grada Vukovara 78, HR - 10000 Zagreb, Croatia","openingHours":"Monday-Friday: 8.00-16.00, Thursday 10:00 - 18:00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.dziv.hr/","applicationPageUrl":"http://it-app.dziv.hr/Pretrage/en/z/Detaljno.aspx/$APPNUMBER$","email":"info@dziv.hr","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jul 1, 2013 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:15 AM","numberOfDocuments":48402,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":21,"country":{"id":14,"name":"HU","description":"Hungary","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"HIPO","officeCode":"HU","name":"Szellemi Tulajdon Nemzeti Hivatala","telephone":"00 36-13124400","address":"1081 Budapest II. János Pál pápa tér 7. Hungary","openingHours":"Monday-Friday: 9.00-14.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.sztnh.gov.hu","applicationPageUrl":"http://epub.hpo.hu/e-kutatas/index.html?lang\u003dEN\u0026service\u003dADATLAP\u0026appId\u003d$AN$","email":"ufo@hipo.gov.hu","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jun 25, 2012 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:23 AM","numberOfDocuments":117135,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":22,"country":{"id":15,"name":"IE","description":"Ireland","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"IEIPO","officeCode":"IE","name":"Irish Patents Office","telephone":"00 353-567720111","address":"Government Buildings, Hebron Road, Kilkenny, Ireland","openingHours":"Monday-Friday: 9.00-14.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.patentsoffice.ie/ ","applicationPageUrl":"https://eregister.patentsoffice.ie/register/TMRegister.aspx?idappli\u003d$APPNUMBER$","email":"patlib@patentsoffice.ie","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Dec 10, 2012 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:18 AM","numberOfDocuments":167773,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":60,"country":{"id":92,"name":"IN","description":"India","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"CGDPTM","officeCode":"IN","name":"Office of the Controller-General of Patents, Designs and Trademarks","telephone":"+91 22-24132735","address":"Boudhik Sampada Bhavan, Antop Hill, S.M. Road, Mumbai-400037","openingHours":"-","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.ipindia.nic.in/","applicationPageUrl":"http://www.ipindia.nic.in/","email":"cgoffice-mh@nic.in","languages":"en","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Apr 26, 2017 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:16 AM","numberOfDocuments":868757,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":37,"country":{"id":91,"name":"IS","description":"Iceland","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"ELS-IPO","officeCode":"IS","name":"Einkaleyfastofan - Icelandic Patent Office","telephone":"(+354) 580 9400","address":"Engjateigi 3 - IS 105 Reykjavik","openingHours":"Weekdays 10:00 to 15:00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.els.is/en","applicationPageUrl":"http://www.els.is/vorumerki/leit-i-gagnabonkum?registration-number\u003d$RN$","email":"postur@els.is","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Nov 24, 2014 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:15 AM","numberOfDocuments":51185,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":7,"country":{"id":16,"name":"IT","description":"Italy","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"UIBM","officeCode":"IT","name":"Ufficio Italiano Brevetti e Marchi","telephone":"+39 06-4705-5800","address":"Via Molise, 19 - 00187 Roma","openingHours":"9:00 to 17:00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.uibm.gov.it","applicationPageUrl":"http://www.uibm.gov.it/bancadati/search.php","email":"callcenter@uibm.eu","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Apr 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:23 AM","numberOfDocuments":1134920,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":41,"country":{"id":98,"name":"JP","description":"Japan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"JPO","officeCode":"JP","name":"Japan Patent Office","telephone":"(+813)35809827","address":"3-4-3 Kasumigaseki Chiyoda-ku Tokyo 100-8915","openingHours":"N/A","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.jpo.go.jp","applicationPageUrl":"https://www.j-platpat.inpit.go.jp/web/all/top/BTmTopEnglishPage","email":"PA0842@jpo.go.jp","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Nov 23, 2015 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:15 AM","numberOfDocuments":4074318,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":63,"country":{"id":54,"name":"KH","description":"Cambodia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"DIP","officeCode":"KH","name":"Department of Industrial Property (DIP)","telephone":"+85523866115","address":" Lot 19–16, 113B Road, Phum Teuk Thla, Sangkat Teuk Thla, Khan Sen Sok, Phnom Penh, Cambodia","openingHours":"-","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.cambodiaip.gov.kh","applicationPageUrl":"http://www.cambodiaip.gov.kh","email":"dipr.moc@gmail.com","languages":"km","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Dec 22, 2016 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:21 AM","numberOfDocuments":82758,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":35,"country":{"id":148,"name":"KR","description":"Republic of Korea","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"KIPO","officeCode":"KR","name":"Korean Intellectual Property Office","telephone":"+82 42 481 5135","address":"Government Complex Daejeon Building 4, 189, Cheongsa-ro, Seo-gu, Daejeon, 302-701, Republic of Korea","openingHours":"9 am to 6 pm (Korean time)","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.kipo.go.kr/kpo/user.tdf?a\u003duser.english.main.BoardApp\u0026c\u003d1001","applicationPageUrl":"http://link.kipris.or.kr/link/main/Biblio.jsp?reg_key\u003d5BpjNrtjRsaQhyqmZ30AmQ%3D%3D\u0026APPLNO\u003d$APPNUMBER$","email":"maypark@kipo.go.kr","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Feb 12, 2014 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:19 AM","numberOfDocuments":3374251,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":23,"country":{"id":17,"name":"LT","description":"Lithuania","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"VPB","officeCode":"LT","name":"The State Patent Bureau of the Republic of Lithuania","telephone":"+370 5 278 0290","address":"Code 188708943, Kalvarijų str. 3, LT-09310, Vilnius - Lithuania","openingHours":"Mon-Thu 8.00 - 17.00, Fri 8.00 - 15.45","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.vpb.gov.lt","applicationPageUrl":"http://www.vpb.lt/db/rezult3.php?appnum\u003d$APPNUMBER$","email":"spb@vpb.gov.lt","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jan 30, 2012 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:24 AM","numberOfDocuments":79649,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":24,"country":{"id":18,"name":"LV","description":"Latvia","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"LRPV","officeCode":"LV","name":"Patent Office of the Republic of Latvia","telephone":"+371 67099 600 ","address":"Citadeles street 7/70, Riga, LV-1010, LATVIA ","openingHours":"Monday-Friday: 9.00-14.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.lrpv.gov.lv ","applicationPageUrl":"http://databases.lrpv.gov.lv/databases/en/trademark/details/$APPNUMBER$","email":"valde@lrpv.gov.lv","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Apr 23, 2012 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:17 AM","numberOfDocuments":61565,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":33,"country":{"id":128,"name":"MA","description":"Morocco","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"OMPIC","officeCode":"MA","name":"Moroccan Industrial and Commercial Property Office","telephone":"+212522586400","address":"Office Marocain de la Propriété Industrielle et Commerciale- R.S. 114 KM 9,5 Route de Nouasseur - SIDI MAAROUF, CASABLANCA, MOROCCO","openingHours":"Monday - Friday 8h30 - 16h30","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.ompic.org.ma/","applicationPageUrl":"http://search.ompic.ma/web/pages/consulterMarqueTMView.do?refReglementationTitreLabel\u003d$APPNUMBER$","email":"info@ompic.ma","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Nov 11, 2013 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:15 AM","numberOfDocuments":193653,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":74,"country":{"id":124,"name":"MD","description":"Moldova","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"AGEPI","officeCode":"MD","name":"State Agency on Intellectual Property","telephone":"(373 22) 400 583","address":"24/1 Andrei Doga Str., Chisinau, MD2024","openingHours":" Monday - Friday 8:00 - 16:30","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://agepi.gov.md","applicationPageUrl":"http://www.db.agepi.md/marcireprezentanti/Details.aspx?idapply\u003d$AN$","email":"office@agepi.md","languages":"ro","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Nov 20, 2017 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:21 AM","numberOfDocuments":42015,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":50,"country":{"id":113,"name":"MK","description":"FYROM","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"SOIP","officeCode":"MK","name":"State Office of Industrial Property","telephone":"38923103601","address":"Boulevard October 11, nr.25, 1000 Skopje","openingHours":"Monday to Friday 8:30 - 16:30","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.ippo.gov.mk/EN/Index_en.aspx","applicationPageUrl":"http://ippo.gov.mk/Search/TradeMarkSearchDetails.aspx?appnr\u003d$AN$","email":"info@ippo.gov.mk","languages":"en","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jul 27, 2015 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:24 AM","numberOfDocuments":32410,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":25,"country":{"id":19,"name":"MT","description":"Malta","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"CD-IPRD","officeCode":"MT","name":"Commerce Department, Industrial Property Registrations Directorate ","telephone":"00 356 2569 0100","address":"Lascaris, Valletta VLT 1933, Malta","openingHours":"1.10 to 15.6: 8.00-12.00, 1.30-3.30; Summer: 8.00-12.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://commerce.gov.mt","applicationPageUrl":"https://ips.gov.mt/NR/TM$APPNUMBER$","email":"ipoffice@gov.mt","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"May 16, 2013 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:23 AM","numberOfDocuments":55476,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":30,"country":{"id":122,"name":"MX","description":"Mexico","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"IMPI","officeCode":"MX","name":"Instituto Mexicano de la Propiedad Industrial","telephone":"+52 55 533 40700","address":"Periférico Sur 3106, Col. Jardines del Pedregal, Del. Álvaro Obregón, C.P. 01900, México, D.F.","openingHours":"Monday-Friday: 8.45-16.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"https://www.gob.mx/impi","applicationPageUrl":"http://marcanet.impi.gob.mx/marcanet/vistas/common/datos/bsqExpedienteCompleto.pgi?applicationNumber\u003d$AN$","email":"dm@impi.gob.mx","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jul 1, 2013 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:20 AM","numberOfDocuments":1454616,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":68,"country":{"id":116,"name":"MY","description":"Malaysia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"MyIPO","officeCode":"MY","name":"Intellectual Property Corporation of Malaysia","telephone":"+60322998400","address":"Unit 1-7, Ground Floor,  Tower B, Menara UOA Bangsar, No. 5, Jalan Bangsar Utama 1, 59000 Kuala Lumpur ","openingHours":"8.15am - 5.15pm","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.myipo.gov.my","applicationPageUrl":"http://onlineip.myipo.gov.my/index.cfm?event\u003dsearch.tm.details\u0026id\u003d$APPNUMBER$","email":"ipmalaysia@myipo.gov.my","languages":"ms","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Dec 12, 2016 12:00:00 AM","dateLastUpdate":"Dec 8, 2017 3:07:42 AM","numberOfDocuments":790395,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":31,"country":{"id":138,"name":"NO","description":"Norway","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"NIPO","officeCode":"NO","name":"Norwegian Industrial Property Office","telephone":"0047 22 38 73 33","address":"PO Box 8160 Dep., N-0033 Oslo","openingHours":"Monday - Friday 9.00 - 15.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.patentstyret.no/en/","applicationPageUrl":"https://search.patentstyret.no/Trademark/$AN$","email":"post@patentstyret.no","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jul 1, 2013 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:22 AM","numberOfDocuments":267049,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":62,"country":{"id":145,"name":"PE","description":"Peru","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"INDECOPI","officeCode":"PE","name":"Instituto Nacional de Defensa de la Competencia y de la Protección de la Propiedad Intelectual","telephone":"+5112247800","address":"Calle de la Prosa No. 104 San Borja Lima","openingHours":"From 8h30 to 16h30","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.indecopi.gob.pe","applicationPageUrl":"http://sistemas.indecopi.gob.pe/osdconsultaspublicas/Default2.asp?Nro_exp_EUIPO\u003d$AN$","email":"tmviewconsultas@indecopi.gob.pe","languages":"es","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Oct 10, 2017 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:14 AM","numberOfDocuments":426196,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":52,"country":{"id":146,"name":"PH","description":"Philippines","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"IPOPHIL","officeCode":"PH","name":"Intellectual Property Office of the Philippines","telephone":"006322386300","address":"28 Upper McKinley Road, McKinley Hill Town Center Fort Bonifacio, Taguig City 1634, Philippines","openingHours":"Monday to Friday, from 8 am to 5 pm","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.ipophil.gov.ph","applicationPageUrl":"http://www.asean-tmview.org/tmview/bookmark?q\u003dan:$AN$\u0026oc:PH","email":"mail@ipophil.gov.ph","languages":"en","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Mar 23, 2015 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:22 AM","numberOfDocuments":414722,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":26,"country":{"id":20,"name":"PL","description":"Poland","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"PPO","officeCode":"PL","name":"Urząd Patentowy Rzeczypospolitej Polskiej","telephone":"0048225790555","address":"PL 00 - 950 Warszawa, Al. Niepodległości 188/192, Poland","openingHours":"Monday-Friday: 8.00-16.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.uprp.gov.pl ","applicationPageUrl":"http://regservtd.uprp.pl/register/application?number\u003d$APPNUMBER$","email":"informacja@uprp.pl","active":true,"ready":true,"crnotificationsactive":false,"emailcreportnotification":"Anna.SAMOLCZYK@ext.euipo.europa.eu","weight":1,"activatedDate":"Dec 17, 2012 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:18 AM","numberOfDocuments":415500,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":3,"country":{"id":21,"name":"PT","description":"Portugal","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"INPIPT","officeCode":"PT","name":"Instituto Nacional da Propriedade Industrial","telephone":"+351 21 881 8100","address":"Campo das Cebolas 1149-035 – Lisboa Portugal","openingHours":"9.00 am to 4.30 pm (Portuguese time)","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.inpi.pt","applicationPageUrl":"http://servicosonline.inpi.pt/pesquisas/main/marcasdirecto.jsp?appnumber\u003d$APPNUMBER$\u0026markNumberType\u003dAPP","email":"atm@inpi.pt","active":true,"ready":true,"crnotificationsactive":false,"emailcreportnotification":"Anna.SAMOLCZYK@ext.euipo.europa.eu","weight":1,"activatedDate":"Apr 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:21 AM","numberOfDocuments":428731,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":15,"country":{"id":22,"name":"RO","description":"Romania","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"OSIM","officeCode":"RO","name":"STATE OFFICE FOR INVENTIONS AND TRADEMARKS","telephone":"+4021.306.08.00","address":"5, Ion Ghica Street, sector 3, Bucharest, ROMANIA Zip code 030044","openingHours":"Monday-Friday: 9.00-14.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.osim.ro/","applicationPageUrl":" http://api.osim.ro:9080/tm-registru/detalii.jsp?ce\u003d$APPNUMBER$\u0026unde\u003dextidappli","email":"office@osim.ro","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jan 30, 2012 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:16 AM","numberOfDocuments":208212,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":46,"country":{"id":159,"name":"RS","description":"Serbia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"IPORS","officeCode":"RS","name":"Intellectual Property Office of the Republic of Serbia","telephone":"(+38111)2025800","address":"Knjeginje Ljubice 5 11000 Belgrade","openingHours":"8h - 15h","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.zis.gov.rs/pocetna.1.html ","applicationPageUrl":"http://reg.zis.gov.rs/regis/detail.php?entity\u003dmark\u0026lang\u003den\u0026file_nbr\u003d$AN$","email":"zis@zis.gov.rs","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jul 6, 2015 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:13 AM","numberOfDocuments":51347,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":36,"country":{"id":149,"name":"RU","description":"Russian Federation","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"ROSPATENT","officeCode":"RU","name":"Russian Federal Service for Intellectual Property, Patents and Trademarks","telephone":"+7 499 240-60-15","address":"Bld. 30-1, Berezhkovskaya nab., Moscow, G-59, GSP-5, Russia, 123995","openingHours":"Monday- Thursday 9.30-18.15, Friday 9.30-17.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.rupto.ru/rupto/portal/start?lang\u003den","applicationPageUrl":"http://www1.fips.ru/fips_servl/fips_servlet?DB\u003dRUTM\u0026rn\u003d1248\u0026DocNumber\u003d$RN$\u0026TypeFile\u003dhtml","email":"fips@rupto.ru","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Dec 16, 2013 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:21 AM","numberOfDocuments":599001,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":27,"country":{"id":23,"name":"SE","description":"Sweden","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"PRV","officeCode":"SE","name":"Patent- och Registreringsverket","telephone":"00 46-87822800","address":"Valhallavägen 136 P.O. Box 5055 S-102 42 Stockholm, Sweden","openingHours":"Monday-Friday: 9.00-16.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.prv.se/ ","applicationPageUrl":"https://was.prv.se/VarumarkesDb/VarumarkesDetails?lang\u003dEN\u0026ansnr\u003d$APPNUMBER$","email":"kundtjanst@prv.se","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Jan 30, 2012 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:14 AM","numberOfDocuments":455668,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":10,"country":{"id":25,"name":"SI","description":"Slovenia","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"SIPO","officeCode":"SI","name":"Urad RS za intelektualno lastnino","telephone":"+386 1 620 31 01","address":"Kotnikova ulica 6, SI-1000 Ljubljana, Slovenia","openingHours":"Monday-Friday: 9.00-14.00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.uil-sipo.si/","applicationPageUrl":"http://www2.uil-sipo.si/ds1.htm?A\u003d107002\u0026Q\u003dNUM%3D$APPNUMBER$","email":"info@uil-sipo.si","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Oct 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:17 AM","numberOfDocuments":48675,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":11,"country":{"id":24,"name":"SK","description":"Slovakia","european":true,"designatedCountry":true,"grouped":false,"idparent":26},"shortname":"SKIPO","officeCode":"SK","name":"Úrad priemyselného vlastníctva Slovenskej republiky","telephone":"+421484300131","address":"Švermova 43, 974 04 Banská Bystrica 4, Slovak Republic","openingHours":"Monday to Friday, 9:00 - 12:00 and 13:00 - 15:00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.indprop.gov.sk","applicationPageUrl":"http://www.indprop.gov.sk/tmView/?id\u003d$APPNUMBER$","email":"infocentrum@indprop.gov.sk","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Oct 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:23 AM","numberOfDocuments":117666,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":77,"country":{"id":155,"name":"SM","description":"San Marino","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"USBM","officeCode":"SM","name":"Ufficio di Stato Brevetti e Marchi","telephone":"+3780549882982","address":"Via 28 Luglio, 212 - 47893 Borgo Maggiore - Repubblica di San Marino","openingHours":"Monday and Thursday: 8,15 am - 14,15 pm / 15,00 pm - 18,00 pm - Tuesday, Wednesday and Friday: 8,15 am - 14,15 pm","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.usbm.sm/on-line/en/home.html","applicationPageUrl":"http://www.usbm.sm/on-line/en/home.html","email":"info.brevettiemarchi@pa.sm","languages":"it","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Oct 16, 2017 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:23 AM","numberOfDocuments":3285,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":38,"country":{"id":179,"name":"TN","description":"Tunisia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"INNORPI","officeCode":"TN","name":"Institut National de la Normalisation et de la Propriété Industrielle","telephone":"(+216)71806758","address":"Rue de l\u0027assistance n. 8 par la rue Alain Savary, BP 57 Cité El Khadra 1003 Tunis","openingHours":"From 8h to 12h15 and from 13h15 to 17h15","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.innorpi.tn","applicationPageUrl":"http://www.innorpi.tn","email":"innorpi@planet.tn","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Oct 20, 2014 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:18 AM","numberOfDocuments":78801,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":32,"country":{"id":180,"name":"TR","description":"Turkey","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"TURKPATENT","officeCode":"TR","name":"Turkish Patent and Trademark Office","telephone":"903123031000","address":"Turkish Patent Institute - 115 Hipodrom Street (06330) Yenimahalle / ANKARA","openingHours":"Monday - Friday 08:30 – 17:30","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.turkpatent.gov.tr/TurkPatent/?lang\u003den","applicationPageUrl":"http://online.turkpatent.gov.tr/trademark-search/pub/trademark_detail/$APPNUMBER$?lang\u003den","email":"info@turkpatent.gov.tr","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Sep 2, 2013 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:24 AM","numberOfDocuments":1421811,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":34,"country":{"id":186,"name":"US","description":"United States","european":false,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"USPTO","officeCode":"US","name":"The United States Patent and Trademark Office","telephone":"1-800-786-9199","address":"USPTO Headquarters - Main Campus Address, Madison Buildings (East \u0026 West), 600 Dulany Street, Alexandria, VA 22314","openingHours":"Monday - Friday (except federal holidays) from 8:30 a.m. to 8:00 p.m. EST. Walk-in assistance is available Monday through Friday (except federal holidays) from 8:30 a.m. to 5:00 p.m. EST","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.uspto.gov/","applicationPageUrl":"http://tsdr.uspto.gov/#caseNumber\u003d$APPNUMBER$\u0026caseType\u003dSERIAL_NO\u0026searchType\u003dstatusSearch","email":"TrademarkAssistanceCenter@uspto.gov","active":true,"ready":true,"crnotificationsactive":false,"weight":1,"activatedDate":"Dec 18, 2013 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:21 AM","numberOfDocuments":8564394,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":6,"country":{"id":26,"name":"EM","description":"EUIPO","european":true,"designatedCountry":true,"grouped":false,"idparent":27},"shortname":"EUIPO","officeCode":"EM","name":"European Union Intellectual Property Office","telephone":"+34 96 513 9100","address":"Avenida de Europa, 4 - E-03008 Alicante - SPAIN","openingHours":"9:00 to 12:00 - 15:00 to 17:00","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"https://euipo.europa.eu/","applicationPageUrl":"https://euipo.europa.eu/eSearch/#details/trademarks/$AN$","email":"information@euipo.europa.eu","active":true,"ready":true,"crnotificationsactive":true,"emailcreportnotification":"antonio.grau@euipo.europa.eu","weight":2,"activatedDate":"Apr 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:14 AM","numberOfDocuments":1525699,"supportedLanguages":[],"officeTmTypes":[]},{"applicationOfficePk":{"office":{"id":5,"country":{"id":27,"name":"WO","description":"WIPO","european":false,"designatedCountry":true,"grouped":false},"shortname":"WIPO","officeCode":"WO","name":"WIPO - World Intellectual Property Organisation","telephone":"+41 22 338 91 11","address":"34, chemin des Colombettes - 1211 - Geneve 20 - Switzerland","openingHours":"Monday to Friday 08:00 - 18:00 (CET)","architectureCode":2},"application":{"id":1,"name":"tmview"}},"officialWebPageUrl":"http://www.wipo.int/portal/index.html.en","applicationPageUrl":"http://www.wipo.int/romarin/advSearch.do?ID\u003d0\u0026searchString\u003d+%2FMARKGR%2FINTREGN+contains+$APPNUMBER$","email":"Intreg.mail@wipo.int","active":true,"ready":true,"crnotificationsactive":false,"weight":2,"activatedDate":"Apr 13, 2010 12:00:00 AM","dateLastUpdate":"Feb 8, 2018 11:35:20 AM","numberOfDocuments":992176,"supportedLanguages":[],"officeTmTypes":[]}];
+		var countries = [{"id":250,"name":"AP","description":"ARIPO","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":28,"name":"AF","description":"Afghanistan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":200,"name":"AX","description":"Aland Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":29,"name":"AL","description":"Albania","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":30,"name":"DZ","description":"Algeria","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":198,"name":"AS","description":"American Samoa","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":31,"name":"AD","description":"Andorra","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":32,"name":"AO","description":"Angola","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":196,"name":"AI","description":"Anguilla","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":197,"name":"AQ","description":"Antarctica","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":33,"name":"AG","description":"Antigua and Barbuda","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":34,"name":"AR","description":"Argentina","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":35,"name":"AM","description":"Armenia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":199,"name":"AW","description":"Aruba","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":36,"name":"AU","description":"Australia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":1,"name":"AT","description":"Austria","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":37,"name":"AZ","description":"Azerbaijan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":38,"name":"BS","description":"Bahamas","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":39,"name":"BH","description":"Bahrain","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":40,"name":"BD","description":"Bangladesh","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":41,"name":"BB","description":"Barbados","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":42,"name":"BY","description":"Belarus","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":252,"name":"BE","description":"Belgium","european":true,"designatedCountry":true,"grouped":true,"idparent":3},{"id":44,"name":"BZ","description":"Belize","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":3,"name":"BX","description":"Benelux","european":true,"designatedCountry":false,"grouped":false,"idparent":26},{"id":45,"name":"BJ","description":"Benin","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":202,"name":"BM","description":"Bermuda","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":46,"name":"BT","description":"Bhutan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":47,"name":"BO","description":"Bolivia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":203,"name":"BQ","description":"Bonaire, Sint Eustatius And Saba","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":48,"name":"BA","description":"Bosnia and Herzegovina","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":49,"name":"BW","description":"Botswana","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":204,"name":"BV","description":"Bouvet Island","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":50,"name":"BR","description":"Brazil","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":222,"name":"IO","description":"British Indian Ocean Territory","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":51,"name":"BN","description":"Brunei Darussalam","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":2,"name":"BG","description":"Bulgaria","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":52,"name":"BF","description":"Burkina Faso","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":53,"name":"BI","description":"Burundi","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":54,"name":"KH","description":"Cambodia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":55,"name":"CM","description":"Cameroon","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":56,"name":"CA","description":"Canada","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":57,"name":"CV","description":"Cape Verde","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":224,"name":"KY","description":"Cayman Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":58,"name":"CF","description":"Central African Republic","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":59,"name":"TD","description":"Chad","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":60,"name":"CL","description":"Chile","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":61,"name":"CN","description":"China","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":208,"name":"CX","description":"Christmas Island","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":205,"name":"CC","description":"Cocos Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":62,"name":"CO","description":"Colombia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":63,"name":"KM","description":"Comoros","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":64,"name":"CG","description":"Congo","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":206,"name":"CK","description":"Cook Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":65,"name":"CR","description":"Costa Rica","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":67,"name":"HR","description":"Croatia","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":68,"name":"CU","description":"Cuba","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":207,"name":"CW","description":"Curaçao","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":4,"name":"CY","description":"Cyprus","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":5,"name":"CZ","description":"Czech Republic","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":66,"name":"CI","description":"Côte D Ivoire","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":69,"name":"CD","description":"Democratic Congo","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":7,"name":"DK","description":"Denmark","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":70,"name":"DJ","description":"Djibouti","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":71,"name":"DM","description":"Dominica","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":72,"name":"DO","description":"Dominican Republic","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":26,"name":"EM","description":"EUIPO","european":true,"designatedCountry":true,"grouped":false,"idparent":27},{"id":73,"name":"EC","description":"Ecuador","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":74,"name":"EG","description":"Egypt","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":75,"name":"SV","description":"El Salvador","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":76,"name":"GQ","description":"Equatorial Guinea","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":77,"name":"ER","description":"Eritrea","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":8,"name":"EE","description":"Estonia","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":78,"name":"ET","description":"Ethiopia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":113,"name":"MK","description":"FYROM","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":210,"name":"FK","description":"Falkland Islands (Malvinas)","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":211,"name":"FO","description":"Faroe Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":79,"name":"FJ","description":"Fiji","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":10,"name":"FI","description":"Finland","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":11,"name":"FR","description":"France","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":212,"name":"GF","description":"French Guiana","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":233,"name":"PF","description":"French Polynesia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":243,"name":"TF","description":"French Southern Territories","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":80,"name":"GA","description":"Gabon","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":81,"name":"GM","description":"Gambia","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":82,"name":"GE","description":"Georgia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":6,"name":"DE","description":"Germany","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":83,"name":"GH","description":"Ghana","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":214,"name":"GI","description":"Gibraltar","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":13,"name":"GR","description":"Greece","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":215,"name":"GL","description":"Greenland","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":84,"name":"GD","description":"Grenada","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":216,"name":"GP","description":"Guadeloupe","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":218,"name":"GU","description":"Guam","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":85,"name":"GT","description":"Guatemala","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":213,"name":"GG","description":"Guernsey","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":86,"name":"GN","description":"Guinea","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":87,"name":"GW","description":"Guinea-Bissau","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":88,"name":"GY","description":"Guyana","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":89,"name":"HT","description":"Haiti","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":220,"name":"HM","description":"Heard Island And Mcdonald Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":90,"name":"HN","description":"Honduras","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":219,"name":"HK","description":"Hong Kong","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":14,"name":"HU","description":"Hungary","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":91,"name":"IS","description":"Iceland","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":92,"name":"IN","description":"India","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":93,"name":"ID","description":"Indonesia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":94,"name":"IR","description":"Iran","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":95,"name":"IQ","description":"Iraq","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":15,"name":"IE","description":"Ireland","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":221,"name":"IM","description":"Isle Of Man","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":96,"name":"IL","description":"Israel","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":16,"name":"IT","description":"Italy","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":97,"name":"JM","description":"Jamaica","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":98,"name":"JP","description":"Japan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":223,"name":"JE","description":"Jersey","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":99,"name":"JO","description":"Jordan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":100,"name":"KZ","description":"Kazakhstan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":101,"name":"KE","description":"Kenya","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":102,"name":"KI","description":"Kiribati","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":103,"name":"KP","description":"Korea","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":104,"name":"KW","description":"Kuwait","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":105,"name":"KG","description":"Kyrgyzstan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":106,"name":"LA","description":"Lao","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":18,"name":"LV","description":"Latvia","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":107,"name":"LB","description":"Lebanon","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":108,"name":"LS","description":"Lesotho","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":109,"name":"LR","description":"Liberia","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":110,"name":"LY","description":"Libya","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":111,"name":"LI","description":"Liechtenstein","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":17,"name":"LT","description":"Lithuania","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":254,"name":"LU","description":"Luxembourg","european":true,"designatedCountry":true,"grouped":true,"idparent":3},{"id":226,"name":"MO","description":"Macao","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":114,"name":"MG","description":"Madagascar","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":115,"name":"MW","description":"Malawi","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":116,"name":"MY","description":"Malaysia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":117,"name":"MV","description":"Maldives","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":118,"name":"ML","description":"Mali","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":19,"name":"MT","description":"Malta","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":119,"name":"MH","description":"Marshall Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":228,"name":"MQ","description":"Martinique","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":120,"name":"MR","description":"Mauritania","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":121,"name":"MU","description":"Mauritius","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":249,"name":"YT","description":"Mayotte","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":122,"name":"MX","description":"Mexico","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":123,"name":"FM","description":"Micronesia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":124,"name":"MD","description":"Moldova","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":125,"name":"MC","description":"Monaco","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":126,"name":"MN","description":"Mongolia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":127,"name":"ME","description":"Montenegro","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":229,"name":"MS","description":"Montserrat","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":128,"name":"MA","description":"Morocco","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":129,"name":"MZ","description":"Mozambique","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":130,"name":"MM","description":"Myanmar","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":131,"name":"NA","description":"Namibia","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":132,"name":"NR","description":"Nauru","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":133,"name":"NP","description":"Nepal","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":253,"name":"NL","description":"Netherlands","european":true,"designatedCountry":true,"grouped":true,"idparent":3},{"id":230,"name":"NC","description":"New Caledonia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":134,"name":"NZ","description":"New Zealand","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":135,"name":"NI","description":"Nicaragua","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":136,"name":"NE","description":"Niger","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":137,"name":"NG","description":"Nigeria","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":232,"name":"NU","description":"Niue","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":231,"name":"NF","description":"Norfolk Island","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":227,"name":"MP","description":"Northern Mariana Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":138,"name":"NO","description":"Norway","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":139,"name":"OM","description":"Oman","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":251,"name":"OA","description":"Organisation Africaine de la Propriété Intellectuelle","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":140,"name":"PK","description":"Pakistan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":141,"name":"PW","description":"Palau","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":236,"name":"PS","description":"Palestinian Territory, Occupied","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":142,"name":"PA","description":"Panama","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":143,"name":"PG","description":"Papua New Guinea","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":144,"name":"PY","description":"Paraguay","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":145,"name":"PE","description":"Peru","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":146,"name":"PH","description":"Philippines","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":235,"name":"PN","description":"Pitcairn","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":20,"name":"PL","description":"Poland","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":21,"name":"PT","description":"Portugal","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":147,"name":"QA","description":"Qatar","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":148,"name":"KR","description":"Republic of Korea","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":237,"name":"RE","description":"Reunion","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":22,"name":"RO","description":"Romania","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":149,"name":"RU","description":"Russian Federation","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":150,"name":"RW","description":"Rwanda","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":201,"name":"BL","description":"Saint Barthelemy","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":239,"name":"SH","description":"Saint Helena","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":151,"name":"KN","description":"Saint Kitts and Nevis","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":152,"name":"LC","description":"Saint Lucia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":225,"name":"MF","description":"Saint Martin (French Part)","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":234,"name":"PM","description":"Saint Pierre And Miquelon","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":153,"name":"VC","description":"Saint Vincent and the Grenadines","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":154,"name":"WS","description":"Samoa","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":155,"name":"SM","description":"San Marino","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":156,"name":"ST","description":"Sao Tome and Principe","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":157,"name":"SA","description":"Saudi Arabia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":158,"name":"SN","description":"Senegal","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":159,"name":"RS","description":"Serbia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":160,"name":"SC","description":"Seychelles","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":161,"name":"SL","description":"Sierra Leone","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":162,"name":"SG","description":"Singapore","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":241,"name":"SX","description":"Sint Maarten (Dutch Part)","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":24,"name":"SK","description":"Slovakia","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":25,"name":"SI","description":"Slovenia","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":238,"name":"SB","description":"Solomon Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":163,"name":"SO","description":"Somalia","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":164,"name":"ZA","description":"South Africa","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":217,"name":"GS","description":"South Georgia Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":165,"name":"SS","description":"South Sudan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":9,"name":"ES","description":"Spain","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":166,"name":"LK","description":"Sri Lanka","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":167,"name":"SD","description":"Sudan","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":168,"name":"SR","description":"Suriname","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":240,"name":"SJ","description":"Svalbard And Jan Mayen","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":169,"name":"SZ","description":"Swaziland","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":23,"name":"SE","description":"Sweden","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":170,"name":"CH","description":"Switzerland","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":171,"name":"SY","description":"Syrian Arab Republic","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":245,"name":"TW","description":"Taiwan, Province Of China","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":172,"name":"TJ","description":"Tajikistan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":173,"name":"TZ","description":"Tanzania","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":174,"name":"TH","description":"Thailand","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":175,"name":"TL","description":"Timor-Leste","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":176,"name":"TG","description":"Togo","european":false,"designatedCountry":true,"grouped":false,"idparent":251},{"id":244,"name":"TK","description":"Tokelau","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":177,"name":"TO","description":"Tonga","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":178,"name":"TT","description":"Trinidad and Tobago","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":179,"name":"TN","description":"Tunisia","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":180,"name":"TR","description":"Turkey","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":181,"name":"TM","description":"Turkmenistan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":242,"name":"TC","description":"Turks And Caicos Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":182,"name":"TV","description":"Tuvalu","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":183,"name":"UG","description":"Uganda","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":184,"name":"UA","description":"Ukraine","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":185,"name":"AE","description":"United Arab Emirates","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":12,"name":"GB","description":"United Kingdom","european":true,"designatedCountry":true,"grouped":false,"idparent":26},{"id":186,"name":"US","description":"United States","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":246,"name":"UM","description":"United States Minor Outlying Islands","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":187,"name":"UY","description":"Uruguay","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":188,"name":"UZ","description":"Uzbekistan","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":189,"name":"VU","description":"Vanuatu","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":190,"name":"VA","description":"Vatican City State","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":191,"name":"VE","description":"Venezuela","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":192,"name":"VN","description":"Vietnam","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":247,"name":"VG","description":"Virgin Islands, British","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":27,"name":"WO","description":"WIPO","european":false,"designatedCountry":true,"grouped":false},{"id":248,"name":"WF","description":"Wallis And Futuna","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":209,"name":"EH","description":"Western Sahara","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":193,"name":"YE","description":"Yemen","european":false,"designatedCountry":true,"grouped":false,"idparent":27},{"id":194,"name":"ZM","description":"Zambia","european":false,"designatedCountry":true,"grouped":false,"idparent":250},{"id":195,"name":"ZW","description":"Zimbabwe","european":false,"designatedCountry":true,"grouped":false,"idparent":250}];
+		AdvancedSearchDTCombos.init(offices, countries);
+	}
+
+	loadOfficesCountries();
+
+</script>
+		<script type="text/javascript" src="resources/js/plugins/jquery-1.5.1.js"></script>
+		<script type="text/javascript" src="resources/js/plugins/jquery-ui-1.8.17.custom.min.js"></script>
+		<script type="text/javascript" src="resources/js/plugins/jquery.cookie.js" type="text/javascript"></script>
+		<script type="text/javascript" src="resources/js/detail.js"></script>
+		<script type="text/javascript" src="resources/js/tmv/goodsServicesTranslation.js"></script>
+
+
+
+				<link rel="stylesheet" type="text/css" href="resources/css/detail.css"/>
+				<link rel="stylesheet" type="text/css" media="print" href="resources/css/print-detail.css" >
+
+
+		<link rel="stylesheet" type="text/css" media="screen" href="/tmview/resources/css/external/jquery-ui/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" media="screen" href="/tmview/resources/css/external/jquery-ui/jquery-ui_override.css"/>
+	</head>
+	<body>
+	<input type="hidden" id="localeCode" name="localeCode" value="en">
+		<div class="detail_wrapper">
+			<div class="detail_left_content">
+				<div class="button_menu openCloseDetailBar">
+					<img class="openCloseDetail" name="open" src="resources/images/arrow-close.png">
+				</div>
+				<div class="detailLeftMenu">
+					<div class="sectionMenu">
+						<ul>
+				            <li><a class="nolink" href="#anchorTrademark" title="Trade mark">Trade mark</a></li>
+					        <li><a class="nolink" href="#anchorListOfGoodsAndServices" title="List of goods and services">List of goods and services</a></li>
+					        <li><a class="nolink" href="#anchorOwner" title="Owner">Owner</a></li>
+				            <li><a class="nolink" href="#anchorRepresentative" title="Representative">Representative</a></li>
+				            <li><a class="nolink" href="#anchorCorrespondenceAddress" title="Correspondence address">Correspondence address</a></li>
+				            <li><a class="nolink" href="#anchorSeniority" title="Seniority">Seniority</a></li>
+				            <li><a class="nolink" href="#anchorExhibitionPriority" title="Exhibition priority">Exhibition priority</a></li>
+				            <li><a class="nolink" href="#anchorPriority" title="Priority">Priority</a></li>
+							<li><a class="nolink" href="#anchorInternationalRegistration" title="International registration transformation">International registration transformation</a></li>
+				            <li><a class="nolink" href="#anchorPublication" title="Publication">Publication</a></li>
+				            <li><a class="nolink" href="#anchorOpposition" title="Opposition">Opposition</a></li>
+				            <li><a class="nolink" href="#anchorRecordals" title="Recordals">Recordals</a></li>
+				            <li><a class="nolink" href="#anchorCancellation" title="Cancellation">Cancellation</a></li>
+				            <li><a class="nolink" href="#anchorAppeals" title="Appeals">Appeals</a></li>
+				            <li><a class="nolink" href="#anchorRenewals" title="Renewals">Renewals</a></li>
+				    	</ul>
+					</div>
+					<div class="detailOfficeLogo">
+						<img id="anchorOfficedetails" class="btnDetailHelpLogo btnDetailHelp" src="resources/images/icon-help.png">
+						<div class="detailLogoDescription">
+							<a id="descriptionLogo" class="nolink urlOfficePopup" target="blank" href="">
+								Click here or the logo below to view this trade mark in the office of origin
+							</a>
+						</div>
+						<a class="nolink urlOfficePopup" target="blank" href="">
+							<img id="OfficeLogoImage" class="photoOfficeLogo" src="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="detail_right_content">
+
+					<!-- anchor for go top -->
+			    	<span id="gotop"></span>
+
+					<!-- Table header -->
+					<div class="detailMenuHeaderDiv">
+						<table class="detailMenuHeader" cellspacing="0">
+							<thead class="headSection">
+								<tr>
+									<th>
+										<div class="controlExpandCollapse">
+											<span class="expandAll"><a class="nolink" href="#">Expand all sections</a> | </span>
+											<span class="collapseAll"><a class="nolink" href="#">Collapse all sections</a></span>
+										</div>
+										<div class="controlExportDetails">
+											<span class="eItem">
+												<img  id="popupNewWindow" class="icon" title="" src="resources/images/open-in-new-window.png">
+											</span>
+											<span class="eItem">
+												<img class="detailBookMarkDesign icon" name="GB500000003275502" title="Bookmark" src="resources/images/icon-bookmark-add_innactive.png">
+											</span>
+											<span class="eItem"  >
+												<img class="detailInviteFriend icon" name="GB500000003275502" title="Share with a friend" src="resources/images/icon-link.png">
+											</span>
+											<span class="eItem">
+												<a class="nolink security" target="blank" href="get-detail-pdf?st13=GB500000003275502" id="exportPdfLink">
+													<img class="icon" title="Export to PDF" src="resources/images/icon-pdf.png">
+												</a>
+											</span>
+											<span class="eItem">
+												<a class="nolink security" target="blank" href="get-detail-xls?st13=GB500000003275502" id="exportXlsLink">
+													<img class="icon" title="Export to Excel" src="resources/images/icon-file-xls.png">
+												</a>
+											</span>
+											<span class="eItem">
+												<img class="icon printDetail" title="Print" src="resources/images/print.png">
+											</span>
+										</div>
+									</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+					<div class="detailMenuHeaderDivNotfixed"></div>
+					<!-- insert the transformation xslt -->
+
+
+
+
+
+
+
+
+
+
+
+<input xmlns:xalan="http://xml.apache.org/xalan" xmlns:fn="http://www.w3.org/2005/xpath-functions" type="hidden" id="logoUrl" value="resources/images/logos/GB.png"><input type="hidden" id="officeUrl" value="http://www.ipo.gov.uk/tmcase/Results/1/$APPNUMBER$"><input type="hidden" id="paramAN" value="UK00003275502"><input type="hidden" id="paramRN" value="UK00003275502"><input type="hidden" id="paramOC" value="GB"><input type="hidden" id="paramProviderLanguage" value="EN"><div style="display:none">
+<div id="emtren12">Apparatus for locomotion by air ; Engines for land vehicles ; Suspension shock
+absorbers for vehicles ; Bodies for vehicles ; Anti-skid chains ; chassis or bumper of
+vehicles ; Safety belts for vehicle seats ; Tractors ; Cycle or motorcycles stands; Bicycle or
+motorcycles brakes ; Handlebars ; Rims ; Bicycle or motorcycles pedals ; Pneumatic tires ;
+Bicycle wheels or saddles ; Handling carts.</div>
+<div id="emtren35">Advertising; Business management; Business administration; Office functions; Direct
+mail advertising; Arranging newspaper subscriptions [for others]; Arranging subscriptions to
+telecommunications services for others; Presentation of goods and services on all means of
+communication for retailing; Business management and organization consultancy;
+Accounting; Document reproduction; Employment agencies; Commercial administration of
+the licensing of the goods and services of others; Consumers (Commercial information and
+advice for -) [consumer advice shop]; Presentation of goods on communication media, for
+retail purposes; Business management advisory services relating to franchising;
+Computerised file management; Exhibitions for commercial or advertising purposes; On-line
+advertising on a computer network; Rental of advertising time on communication media;
+Publication of publicity texts; Rental of advertising space; Dissemination of advertising
+matter; Public relations services; Business auditing.</div>
+<div id="emtren36">Insurance; Financial affairs; Monetary affairs; Real estate affairs; Issuing of travellers'
+cheques or credit cards; Real-estate valuations; Financial management; Real estate
+management; Arranging the provision of finance; Financial analysis; Mutual funds and
+capital investments; Financial consulting; Evaluation (Financial -) [insurance, banking, real
+estate]; Fund investments; Rental of apartments, houses, business premises and offices;
+Rental of mobile homes ; Rental of real estate and providing of information relating thereto;
+Providing of information relating to the rental of real estate; Providing of information relating
+to real estate appraisals; Real estate information; Providing of real estate information in
+connection with real estate properties and land; Financial sponsorship of entertainment,
+sporting and cultural activities; Sponsoring in the form of financial support; Real estate
+investment; Real estate consultancy; Financial consultancy relating to real estate
+investments; Financing of real estate; Property asset management services; Real estate
+management in connection with real estate complexes; Real estate management in
+connection with entertainment facilities; Real estate management in connection with
+residential housing developments; Real estate appraisal, management and brokerage.</div>
+<div id="emtren37">Building of commercial properties ; Construction of sports arenas ; Construction,
+maintenance and repair of conservatories and greenhouses ; Construction and maintenance
+of apartments, studios ; Construction and maintenance of sports centres, health clubs,
+leisure centres and leisure complexes; Construction and maintenance of residential
+properties, commercial buildings, shopping centres, office buildings and multi-storey car
+parks; Construction and maintenance of hotels and residential hotels; Construction and
+repair of residential buildings.</div>
+<div id="emtren38">Information about telecommunication ; computer-aided message and image
+transmission; communication via computer terminals; connection by telecommunication to a
+global computer network ; Providing on-line information relating to holiday accommodation,
+Hotel and camping reservations.</div>
+<div id="emtren39">Transport; Travel arrangement; Travel agencies; Conducting of tours; Vehicle hire;
+Rental of recreational vehicles; Providing of information to tourists relating to excursions and
+sightseeing trips; Providing of information online relating to travel; Arranging travel and
+transportation; Arranging of excursions; Arranging and booking of travel for package
+holidays; Booking of tickets for travel; Booking of seats (travel); Booking of sightseeing
+tours; Booking of travel, excursions and cruises; Computerised travel booking; Consultancy
+in the field of sightseeing and travel provided by telephone call centres and telephone
+helplines; Consultancy relating to sightseeing and travel; Services of travel consultants;
+Travel arrangement and reservation services.</div>
+<div id="emtren41">Education; Cultural activities ; Education information ; Vocational retraining; Publication
+of books; Library services; Videotape production; Rental of motion pictures; Rental of sound
+recordings; Rental of video tape recorders/players or radio and television sets; Rental of
+show scenery; Videotape editing; Photography; Organisation of competitions [education];
+Arranging and conducting of conferences, congresses and symposiums; Arranging of
+exhibitions for cultural or educational purposes; Booking of seats for shows; Game services
+provided on-line from a computer network; Gambling; Publication of electronic books and
+journals on-line; Electronic desktop publishing.</div>
+<div id="emtren43">Temporary accommodation; Accommodation bureaux [hotels, boarding houses];
+Lounge bars; Caf&eacute;s; Cafeterias; Canteens; Day-nurseries [cr&egrave;ches]; Providing of meals for
+immediate consumption; Resort hotel services; Rental of portable buildings; Rental of
+temporary accommodation; Rental of temporary accommodation in the form of villas and
+bungalows; Rental of temporary accommodation in holiday homes and flats; Retirement
+homes; Tourist homes; Services for providing food and drink, namely restaurants (catering);
+Providing temporary lodging for guests; Services for providing food and drink in restaurants
+and bars, namely restaurant (catering) and bar services; Services for providing food and
+drink as a welcome service; Providing of holiday accommodation; Hotel reservations and
+booking of hotel rooms; Providing campground facilities; Providing of accommodation in
+hotels and motels; Providing of temporary accommodation in holiday camps, apartments
+and holiday homes, and in guest houses; Providing of information relating to temporary
+accommodation; Providing of information relating to temporary accommodation via the
+Internet; Providing of land and caravan sites on a temporary basis; Arranging of temporary
+accommodation and providing of temporary accommodation; Boarding houses; Hotel
+reservations for travellers; Room reservation services; Booking of temporary
+accommodation via the Internet; Reservation of temporary accommodation in the nature of
+holiday homes; Booking of campsite accommodation; Tourist restaurants; Travel agency
+services for booking temporary accommodation; Travel agency services for the booking of
+hotel accommodation; Tourist inns; Coffee shop services; Caf&eacute; services and restaurants;
+Caf&eacute;s; Holiday camp services [lodging]; Consultancy in the field of temporary
+accommodation, provided by telephone call centres and telephone helplines; Hotel
+reservation services provided via the Internet; Restaurants offering takeaway services;
+Services for providing food and drink for customers; Catering; Hotel catering; Temporary
+accommodation in hotels, motels and boarding houses; Temporary accommodation services
+provided by holiday camps; Hotel, motel and resort lodging services; Providing travel
+lodging information services and travel lodging booking agency services for travellers.</div>
+</div><input type="hidden" id="paramInterfaceLanguage" value="EN"><div class="anchor" id="anchorTrademark"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader">Trade mark</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorTrademark" title="Trade mark"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td>
+<table class="marginTopLeftBottomExtraLeft">
+<tbody>
+<tr>
+<td class="tdTrademarkName" colspan="2"><span class="trademarkName">WHAT MATTERS</span></td>
+</tr>
+<tr>
+<td></td><td vertical-align="top"></td>
+</tr>
+<tr>
+<td class="size30 bold"><span class="detailCodeTmv">(210)/(260)</span>Application number</td><td class="size70">UK00003275502</td>
+</tr>
+<tr>
+<td class="size30 bold"><span class="detailCodeTmv">(270)</span>Application language</td><td class="size70">en</td>
+</tr>
+<tr>
+<td class="size30 bold"><span class="detailCodeTmv">(220)</span>Application date</td><td class="size70">2017-12-06</td>
+</tr>
+<tr>
+<td class="size30 bold">Application reference</td><td class="size70">T03930 GB</td>
+</tr>
+<tr>
+<td class="size30 bold">Trade mark office</td><td class="size70">United Kingdom - UKIPO</td>
+</tr>
+<tr>
+<td class="size30 bold"><span class="detailCodeTmv">(190)</span>Registration office</td><td class="size70">GB</td>
+</tr>
+<tr>
+<td class="size30 bold"><span class="detailCodeTmv">(111)</span>Registration number</td><td class="size70">UK00003275502</td>
+</tr>
+<tr>
+<td class="size30 bold">Series of</td><td class="size70">0</td>
+</tr>
+<tr>
+<td class="size30 bold"><span class="detailCodeTmv">(550)</span>Trade mark type</td><td class="size70 gtranslate">Word</td>
+</tr>
+<tr>
+<td class="size30 bold"><span class="detailCodeTmv">(551)</span>Kind of mark</td><td class="size70 gtranslate">Individual</td>
+</tr>
+<tr>
+<td class="size30 bold"><span class="detailCodeTmv">(511)</span>Nice classification</td><td class="size70">12,35,36,37,38,39,41,43</td>
+</tr>
+<tr>
+<td class="size30 bold">Current trade mark status</td><td class="size70 gtranslate">Application filed</td>
+</tr>
+<tr>
+<td class="size30 bold">Status date</td><td class="size70">2017-12-06</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorListOfGoodsAndServices"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader"><span class="detailCodeSection">(510)</span>List of goods and services</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorListOfGoodsAndServices" title="List of goods and services"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td>
+<table class="marginTopLeftBottom">
+<tbody>
+<tr>
+<td class="size25 bold">Classification version</td><td class="size75"></td>
+</tr>
+<tr>
+<td class="size25 bold">Mark standard character</td><td class="size75"></td>
+</tr>
+<tr>
+<td colspan="2" class="container_gs">
+<table style="display:none" class="detail marginTopLeftBottom" name="langCombo1_lgstblEN" id="langCombo1_lgstblEN">
+<thead class="headSection marginTopLeftBottom">
+<tr>
+<th style="text-align:left" colspan="2"><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key">EN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="size25 bold"><span class="detailCodeHeader">(511)</span>Nice class number</td><td class="size75" id="langCombo1_clNum12EN">12</td>
+</tr>
+<tr>
+<td class="size25 bold">List of goods and services</td><td class="size75" id="langCombo1_desc12EN">Apparatus for locomotion by air ; Engines for land vehicles ; Suspension shock
+absorbers for vehicles ; Bodies for vehicles ; Anti-skid chains ; chassis or bumper of
+vehicles ; Safety belts for vehicle seats ; Tractors ; Cycle or motorcycles stands; Bicycle or
+motorcycles brakes ; Handlebars ; Rims ; Bicycle or motorcycles pedals ; Pneumatic tires ;
+Bicycle wheels or saddles ; Handling carts.</td>
+</tr>
+<tr>
+<td class="size25 bold"><span class="detailCodeHeader">(511)</span>Nice class number</td><td class="size75" id="langCombo1_clNum35EN">35</td>
+</tr>
+<tr>
+<td class="size25 bold">List of goods and services</td><td class="size75" id="langCombo1_desc35EN">Advertising; Business management; Business administration; Office functions; Direct
+mail advertising; Arranging newspaper subscriptions [for others]; Arranging subscriptions to
+telecommunications services for others; Presentation of goods and services on all means of
+communication for retailing; Business management and organization consultancy;
+Accounting; Document reproduction; Employment agencies; Commercial administration of
+the licensing of the goods and services of others; Consumers (Commercial information and
+advice for -) [consumer advice shop]; Presentation of goods on communication media, for
+retail purposes; Business management advisory services relating to franchising;
+Computerised file management; Exhibitions for commercial or advertising purposes; On-line
+advertising on a computer network; Rental of advertising time on communication media;
+Publication of publicity texts; Rental of advertising space; Dissemination of advertising
+matter; Public relations services; Business auditing.</td>
+</tr>
+<tr>
+<td class="size25 bold"><span class="detailCodeHeader">(511)</span>Nice class number</td><td class="size75" id="langCombo1_clNum36EN">36</td>
+</tr>
+<tr>
+<td class="size25 bold">List of goods and services</td><td class="size75" id="langCombo1_desc36EN">Insurance; Financial affairs; Monetary affairs; Real estate affairs; Issuing of travellers'
+cheques or credit cards; Real-estate valuations; Financial management; Real estate
+management; Arranging the provision of finance; Financial analysis; Mutual funds and
+capital investments; Financial consulting; Evaluation (Financial -) [insurance, banking, real
+estate]; Fund investments; Rental of apartments, houses, business premises and offices;
+Rental of mobile homes ; Rental of real estate and providing of information relating thereto;
+Providing of information relating to the rental of real estate; Providing of information relating
+to real estate appraisals; Real estate information; Providing of real estate information in
+connection with real estate properties and land; Financial sponsorship of entertainment,
+sporting and cultural activities; Sponsoring in the form of financial support; Real estate
+investment; Real estate consultancy; Financial consultancy relating to real estate
+investments; Financing of real estate; Property asset management services; Real estate
+management in connection with real estate complexes; Real estate management in
+connection with entertainment facilities; Real estate management in connection with
+residential housing developments; Real estate appraisal, management and brokerage.</td>
+</tr>
+<tr>
+<td class="size25 bold"><span class="detailCodeHeader">(511)</span>Nice class number</td><td class="size75" id="langCombo1_clNum37EN">37</td>
+</tr>
+<tr>
+<td class="size25 bold">List of goods and services</td><td class="size75" id="langCombo1_desc37EN">Building of commercial properties ; Construction of sports arenas ; Construction,
+maintenance and repair of conservatories and greenhouses ; Construction and maintenance
+of apartments, studios ; Construction and maintenance of sports centres, health clubs,
+leisure centres and leisure complexes; Construction and maintenance of residential
+properties, commercial buildings, shopping centres, office buildings and multi-storey car
+parks; Construction and maintenance of hotels and residential hotels; Construction and
+repair of residential buildings.</td>
+</tr>
+<tr>
+<td class="size25 bold"><span class="detailCodeHeader">(511)</span>Nice class number</td><td class="size75" id="langCombo1_clNum38EN">38</td>
+</tr>
+<tr>
+<td class="size25 bold">List of goods and services</td><td class="size75" id="langCombo1_desc38EN">Information about telecommunication ; computer-aided message and image
+transmission; communication via computer terminals; connection by telecommunication to a
+global computer network ; Providing on-line information relating to holiday accommodation,
+Hotel and camping reservations.</td>
+</tr>
+<tr>
+<td class="size25 bold"><span class="detailCodeHeader">(511)</span>Nice class number</td><td class="size75" id="langCombo1_clNum39EN">39</td>
+</tr>
+<tr>
+<td class="size25 bold">List of goods and services</td><td class="size75" id="langCombo1_desc39EN">Transport; Travel arrangement; Travel agencies; Conducting of tours; Vehicle hire;
+Rental of recreational vehicles; Providing of information to tourists relating to excursions and
+sightseeing trips; Providing of information online relating to travel; Arranging travel and
+transportation; Arranging of excursions; Arranging and booking of travel for package
+holidays; Booking of tickets for travel; Booking of seats (travel); Booking of sightseeing
+tours; Booking of travel, excursions and cruises; Computerised travel booking; Consultancy
+in the field of sightseeing and travel provided by telephone call centres and telephone
+helplines; Consultancy relating to sightseeing and travel; Services of travel consultants;
+Travel arrangement and reservation services.</td>
+</tr>
+<tr>
+<td class="size25 bold"><span class="detailCodeHeader">(511)</span>Nice class number</td><td class="size75" id="langCombo1_clNum41EN">41</td>
+</tr>
+<tr>
+<td class="size25 bold">List of goods and services</td><td class="size75" id="langCombo1_desc41EN">Education; Cultural activities ; Education information ; Vocational retraining; Publication
+of books; Library services; Videotape production; Rental of motion pictures; Rental of sound
+recordings; Rental of video tape recorders/players or radio and television sets; Rental of
+show scenery; Videotape editing; Photography; Organisation of competitions [education];
+Arranging and conducting of conferences, congresses and symposiums; Arranging of
+exhibitions for cultural or educational purposes; Booking of seats for shows; Game services
+provided on-line from a computer network; Gambling; Publication of electronic books and
+journals on-line; Electronic desktop publishing.</td>
+</tr>
+<tr>
+<td class="size25 bold"><span class="detailCodeHeader">(511)</span>Nice class number</td><td class="size75" id="langCombo1_clNum43EN">43</td>
+</tr>
+<tr>
+<td class="size25 bold">List of goods and services</td><td class="size75" id="langCombo1_desc43EN">Temporary accommodation; Accommodation bureaux [hotels, boarding houses];
+Lounge bars; Caf&eacute;s; Cafeterias; Canteens; Day-nurseries [cr&egrave;ches]; Providing of meals for
+immediate consumption; Resort hotel services; Rental of portable buildings; Rental of
+temporary accommodation; Rental of temporary accommodation in the form of villas and
+bungalows; Rental of temporary accommodation in holiday homes and flats; Retirement
+homes; Tourist homes; Services for providing food and drink, namely restaurants (catering);
+Providing temporary lodging for guests; Services for providing food and drink in restaurants
+and bars, namely restaurant (catering) and bar services; Services for providing food and
+drink as a welcome service; Providing of holiday accommodation; Hotel reservations and
+booking of hotel rooms; Providing campground facilities; Providing of accommodation in
+hotels and motels; Providing of temporary accommodation in holiday camps, apartments
+and holiday homes, and in guest houses; Providing of information relating to temporary
+accommodation; Providing of information relating to temporary accommodation via the
+Internet; Providing of land and caravan sites on a temporary basis; Arranging of temporary
+accommodation and providing of temporary accommodation; Boarding houses; Hotel
+reservations for travellers; Room reservation services; Booking of temporary
+accommodation via the Internet; Reservation of temporary accommodation in the nature of
+holiday homes; Booking of campsite accommodation; Tourist restaurants; Travel agency
+services for booking temporary accommodation; Travel agency services for the booking of
+hotel accommodation; Tourist inns; Coffee shop services; Caf&eacute; services and restaurants;
+Caf&eacute;s; Holiday camp services [lodging]; Consultancy in the field of temporary
+accommodation, provided by telephone call centres and telephone helplines; Hotel
+reservation services provided via the Internet; Restaurants offering takeaway services;
+Services for providing food and drink for customers; Catering; Hotel catering; Temporary
+accommodation in hotels, motels and boarding houses; Temporary accommodation services
+provided by holiday camps; Hotel, motel and resort lodging services; Providing travel
+lodging information services and travel lodging booking agency services for travellers.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<table class="subdetail">
+<tr class="transDisclaimer" id="transDisclaimer_langCombo1">
+<td colspan="2">TMclass translation service is not enabled</td>
+</tr>
+<tr class="transDisclaimer2" id="transDisclaimer2_langCombo1">
+<td colspan="2">The translation was found in a different class</td>
+</tr>
+<tr class="transDisclaimer3" id="transDisclaimer3_langCombo1">
+<td colspan="2">Several translations were found in different classes</td>
+</tr>
+<tr>
+<td width="1px" style="text-align: left; padding-left: 3px; width:100%; text-align:right" class="size25" id="langCombo1"></td><td class="tdlangCombo"><button name="translate" type="button" class="button btnTranslate" id="btn_langCombo1">Translate</button></td>
+</tr>
+<tr>
+<td colspan="2">
+<div id="euroClassLabel" style="text-align: left; font-size: 80%; padding-left: 3px;">Service provided by <a target="_blank" id="euroClassUrl" title="Copy and paste the goods and services to TMclass" href="http://euipo.europa.eu/ec2/translatelist/show"><font color="#0000ff">TMclass</font></a> and <a target="_blank" id="googleUrl" href="https://translate.google.com"><img src="resources/images/google-translate.png" id="googleUrlImg" title="https://translate.google.com"></a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="size25 bold">Note</td><td class="size75"></td>
+</tr>
+<tr>
+<td class="container_gs2" colspan="2"></td>
+</tr>
+<tr>
+<td class="container_gs3" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorOwner"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader"><span class="detailCodeSection">(730)/(731)/(732)/(733)</span>Owner</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorOwner" title="Owner"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td>
+<table class="marginTopLeftBottom">
+<tr>
+<td class="size30 bold">Applicant identifier</td><td class="size70">525861</td>
+</tr>
+<tr>
+<td class="size25 bold">Name</td><td class="size75"><span class="FreeFormatNameLine">VILLAGE CENTER</span>
+<br>
+</td>
+</tr>
+<tr>
+<td class="size30 bold">Applicant incorporation country code</td><td class="size70">FR</td>
+</tr>
+<tr>
+<td class="size30 bold">Address country</td><td class="size70">FR</td>
+</tr>
+<tr>
+<td class="size25 bold">Address</td><td class="size75">547 Quai des Moulins<br>Espace Don Quichotte<br>SETE<br>34200<br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorRepresentative"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader"><span class="detailCodeSection">(740)</span>Representative</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorRepresentative" title="Representative"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td>
+<table class="marginTopLeftBottom">
+<tr>
+<td class="size30 bold">Representative identifier</td><td class="size70">18764</td>
+</tr>
+<tr>
+<td class="size25 bold">Name</td><td class="size75"><span class="FreeFormatNameLine">ip21 Ltd</span>
+<br>
+</td>
+</tr>
+<tr>
+<td class="size30 bold">Address country</td><td class="size70">GB</td>
+</tr>
+<tr>
+<td class="size25 bold">Address</td><td class="size75">Central Formalities Department<br>Lakeside 300<br>Old Chapel Way<br>Broadland Business Park<br>Norwich<br>Norfolk<br>NR7 0WG<br>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorCorrespondenceAddress"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader"><span class="detailCodeSection">(750)</span>Correspondence address</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorCorrespondenceAddress" title="Correspondence address"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorCorrespondenceAddress">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorSeniority"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader"><span class="detailCodeSection">(350)</span>Seniority</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorSeniority" title="Seniority"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorSeniority">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorExhibitionPriority"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader">Exhibition priority</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorExhibitionPriority" title="Exhibition priority"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorExhibitionPriority">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorPriority"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader">Priority</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorPriority" title="Priority"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorOpposition">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorInternationalRegistration"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader">International registration transformation</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorInternationalRegistration" title="International registration transformation"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorInternationalRegistration">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorPublication"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader">Publication</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorPublication" title="Publication"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorPublication">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorOpposition"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader">Opposition</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorOpposition" title="Opposition"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorOpposition">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorRecordals"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader">Recordals</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorRecordals" title="Recordals"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorRecordals">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorCancellation"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader">Cancellation</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorCancellation" title="Cancellation"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorCancellation">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorAppeals"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader">Appeals</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorAppeals" title="Appeals"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorAppeals">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table><div class="anchor" id="anchorRenewals"></div><table cellspacing="0" class="detail">
+<thead class="headSection">
+<tr>
+<th><img src="resources/images/icon-collapse-details.gif" class="expandCollapse" title="tm.details.tooltip.expandColapse.key"><span class="detailHeader">Renewals</span><img src="resources/images/icon-help.png" class="btnDetailHelp" id="anchorRenewals" title="Renewals"><a href="#gotop"><img src="resources/images/icon-go-top.gif" class="btnDetailGoTop" title="tm.details.tooltip.goback.key"></a></th>
+</tr>
+</thead>
+<tbody class="bodySection">
+<tr>
+<td><input type="hidden" class="sectionDisable" value="anchorRenewals">
+<div class="mLeft10">No entry for application number GB500000003275502</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+					<!-- combo refill for euroclass goods and services translator section -->
+					<div id="translationLangsList" style="display:none;" >
+						<select class="combo" id="translationLangs">
+							<option value="clean"></option>
+
+
+
+
+
+
+
+
+												<option value="ar">عربي (ar)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="bg">Български (bg)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="bs">Bosanski (bs)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="cs">Ceština (cs)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="da">Dansk (da)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="de">Deutsch (de)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="el">Ελληνικά (el)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="en">English (en)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="es">Español (es)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="et">Eesti keel (et)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="fi">Suomi (fi)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="fr">Français (fr)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="hr">Hrvatski (hr)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="hu">Magyar (hu)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="is">Icelandic (is)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="it">Italiano (it)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="ja">日本語 (ja)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="ka">ქართული (ka)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="ko">한국어 (ko)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="lt">Lietuviu kalba (lt)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="lv">Latviešu valoda (lv)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="mk">македонски јазик (mk)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="mt">Malti (mt)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="nl">Nederlands (nl)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="no">Norsk (no)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="pl">Polski (pl)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="pt">Português (pt)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="ro">Româna (ro)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="ru">Pусский (ru)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="sk">Slovenčina (sk)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="sl">Slovenšcina (sl)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="sq">Shqip (sq)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="sr">Српски (sr)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="sv">Svenska (sv)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+												<option value="tr">Türkçe (tr)</option>
+
+
+
+
+
+						</select>
+					</div>
+
+
+					<!-- Proper use of the anchors
+						New lines are needed to show down side anchor to be shown in top of page
+						The layer anchorAdjustment is hidden when printing page to avoid showing a blank page DV-443
+					 -->
+					<div id="anchorAdjustment">
+						<br><br><br><br><br><br><br><br>
+						<br><br><br><br><br><br><br><br>
+						<br><br><br><br><br><br><br><br>
+						<br><br><br><br><br><br><br><br>
+						<br><br><br><br><br><br><br><br>
+						<br><br><br><br><br><br><br><br>
+						<br><br><br><br><br><br><br><br>
+						<br><br><br><br><br><br><br><br>
+						<br><br><br><br><br><br><br><br>
+						<br><br><br><br><br><br><br><br>
+					</div>
+
+			</div>
+		</div>
+
+		<!-- Dialog -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- details export captcha -->
+<div id="exportDialog" title="Security check" style="display: none;">
+	<iframe id="mydialog" style="border: 0px; height: 300px; width:500px" src=""></iframe>
+</div>
+
+</body>
+
